@@ -1,6 +1,6 @@
 /*Fix voor probleem met de uilijning van Brightest text in de modal bij gebruik van Safari*/
 let isBrowserSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-if (isBrowserSafari){
+if (isBrowserSafari) {
     document.getElementById('logo-text-modal').style.marginTop = "280%";
     document.getElementsByClassName('item-legende')[0].style.width = "250px";
 }
@@ -27,7 +27,7 @@ window.addEventListener('load', (event) => {
 
 //Check of de pagina herladen wordt, zoja? ga terug naar de homepage. Oplossing voor bug met het laden van info in de modal.
 if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
-    window.location.href = "Index.html";
+    window.location.href = "home.html";
 }
 
 //Functies om de inhoud van de modal te veranderen
