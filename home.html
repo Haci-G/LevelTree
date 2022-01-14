@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="initial-scale=1.0, width=device-width, height=device-height, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport"
+        content="initial-scale=1.0, width=device-width, height=device-height, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <!-- ICON Brightest -->
-    <link rel="icon" type="image/png" href="../Assets/Images/brightestIcon.png" />
+    <link rel="icon" type="image/png" href="./Assets/Images/brightestIcon.png" />
 
     <!--CSS files-->
-    <link rel="stylesheet" href="../Css/Index.css">
+    <link rel="stylesheet" href="./Css/Index.css">
 
     <!--Nunito (regular 400 google font)-->
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
@@ -20,14 +21,15 @@
 <body>
     <header id="header">
         <h1 id="header-title" class="title-font">Level Tree</h1>
-        <img id="logoBrightest" srcset="../Assets/Images/Logo_Brightest_CMYK_tagline_AIM%20HIGH.png" alt="logo brightest">
+        <img id="logoBrightest" srcset="./Assets/Images/Logo_Brightest_CMYK_tagline_AIM%20HIGH.png"
+            alt="logo brightest">
     </header>
 
     <main class="zoomViewport">
         <div id="container-boom" class="zoomContainer">
 
             <!--IMAGE BOOM-->
-            <img id="tree" src="../Assets/Images/TL1.png" alt="img level tree" />
+            <img id="tree" src="./Assets/Images/TL1.png" alt="img level tree" />
 
             <!--Dit is het punt waar er op ingezoomd is bij het starten van de pagina en hierna rustig uitzoomd-->
             <div id="zoomStartpunt" class="zoomTarget" data-targetsize="0.02" data-duration="10"></div>
@@ -35,16 +37,17 @@
             <!--TOOLTIPS VAN ALLE LEVELS-->
 
             <!--TOOLTIPS Test met raster-->
-            <div id="tooltipLvTest" data-level="1" class="tooltip tooltipTest zoomTarget" data-targetsize="0.11" data-duration="600">
+            <div id="tooltipLvTest" data-level="1" class="tooltip tooltipTest zoomTarget" data-targetsize="0.11"
+                data-duration="600">
                 <a href="#popup" class="tooltip__trigger">
-                 <p class="title-font">T</p>
+                    <p class="title-font">T</p>
                 </a>
-             <div class="tooltip__wrapper_boven w_lvtest leveltest">
-                 <div class="tooltip__title_center">
-                     <p>Test</p>
-                 </div>
-             </div>
-             </div>
+                <div class="tooltip__wrapper_boven w_lvtest leveltest">
+                    <div class="tooltip__title_center">
+                        <p>Test</p>
+                    </div>
+                </div>
+            </div>
 
             <div id="tooltipLv1" data-level="1" class="tooltip tooltip1 zoomTarget" data-targetsize="0.11"
                 data-duration="600">
@@ -288,15 +291,15 @@
 
     <!--Link voor de js zoom funcionaliteit-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="../Js/Index.js"></script>
+    <script src="./Js/Index.js"></script>
 
     <!--js files voor zoom functionaliteit-->
-    <script type="text/javascript" src="../Js/jquery.zoomooz-helpers.js"></script>
-    <script type="text/javascript" src="../Js/jquery.zoomooz-anim.js"></script>
-    <script type="text/javascript" src="../Js/jquery.zoomooz-core.js"></script>
-    <script type="text/javascript" src="../Js/jquery.zoomooz-zoomTarget.js"></script>
-    <script type="text/javascript" src="../Js/purecssmatrix.js"></script>
-    <script type="text/javascript" src="../Js/sylvester.src.stripped.js"></script>
+    <script type="text/javascript" src="./Js/jquery.zoomooz-helpers.js"></script>
+    <script type="text/javascript" src="./Js/jquery.zoomooz-anim.js"></script>
+    <script type="text/javascript" src="./Js/jquery.zoomooz-core.js"></script>
+    <script type="text/javascript" src="./Js/jquery.zoomooz-zoomTarget.js"></script>
+    <script type="text/javascript" src="./Js/purecssmatrix.js"></script>
+    <script type="text/javascript" src="./Js/sylvester.src.stripped.js"></script>
 </body>
 
 </html>
