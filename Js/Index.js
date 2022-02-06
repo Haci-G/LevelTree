@@ -64,12 +64,16 @@ function VulModalMetJuisteGegevens(levelId) {
     /*header niet zichtbaar maken als de modal open gaat*/
     document.getElementById("header").style.display = "none";
 
+
+
     let juisteObject;
     for (let i = 0; i < alleDataLevels.length; i++) {
         if (alleDataLevels[i].id.toString() === levelId.toString()) {
             juisteObject = alleDataLevels[i];
         }
     }
+
+    
     /*LEVEL TITLE*/
     document.getElementById('modal-title').innerHTML = juisteObject.Title;
 
@@ -82,6 +86,7 @@ function VulModalMetJuisteGegevens(levelId) {
     /*Loopt over soft, technical, text , bto & qualifications skills*/
     for (let i = 3; i < 9; i++) {
         let key = Object.keys(juisteObject)[i];
+        
         let lijst; //Lijst voor de listItems
         if (juisteObject[key].length !== 0) {
             /*Accordion aanmaken met de bijhorende classes*/
@@ -117,7 +122,7 @@ function VulModalMetJuisteGegevens(levelId) {
 
             //video's
             if (key == "Video's") {
-                //Create Carsousel Div ()
+                //Create Carousel Div ()
                 let slideDiv = document.createElement("div");
                 slideDiv.classList.add("slide-container");
 
@@ -136,7 +141,7 @@ function VulModalMetJuisteGegevens(levelId) {
                     thumbnail.classList.add('thumbnail');
 
                     //thumbnail
-                    // create image for thumbnail
+                    // create image for the thumbnail
                     let imageThumbnail = document.createElement('img');
 
                     let linkYT = `https://i.ytimg.com/vi/${element[i, 0]}/hqdefault.jpg`;
@@ -296,8 +301,6 @@ function SliderEffect(buttonON = false) {
 
 
 
-
-
 //INHOUD MODALS => telkens een array met 2 plaatsen.
 //Op positie [0] staat altijd de inhoud (de tekst die gaat weergegeven worden
 //Op positie [1] staat atlijd bij welke rol de tekst hoort => aan de hand van deze parameter (tester,technical of lead)
@@ -389,11 +392,6 @@ alleDataLevels = [
             //SPECIFIC
             ["swITch track finalized", "technical"]
         ],
-        "Video's": [
-            //Video links
-            ["aHI8Wmkny0c", "video"],
-            ["jGZF-ChYJ3A", "video"],
-        ]
     },
 
     //---------------------------LEVEL3---------------------------

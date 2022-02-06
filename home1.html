@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="initial-scale=1.0, width=device-width, height=device-height, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- ICON Brightest -->
+    <link rel="icon" type="image/png" href="./Assets/Images/brightestIcon.png" />
+
+    <!--CSS files-->
+    <link rel="stylesheet" href="./Css/Index1.css">
+
+    <!--Nunito (regular 400 google font)-->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>Brightest - Level Tree</title>
+
+
+</head>
+
+<body>
+    <header id="header">
+        <div>
+            <h1 id="header-title" class="title-font">Level Tree</h1>
+
+            <p><sup id="by">by</sup>
+                <img id="logo-byBrightest" src="./Assets/Images/by_brightest.png" alt="BrightestLogo">
+            </p>
+        </div>
+        <img id="logoBrightest" srcset="./Assets/Images/brightestIcon.png" alt="logo brightest">
+    </header>
+
+    <main>
+
+        <div class="zoomViewport">
+
+            <div id="container-boom" class="zoomContainer">
+                <!-- IMAGE BOOM -->
+                <img id="tree" src="./Assets/Images/TL1.png" alt="img level tree" />
+
+                <!-- Dit is het punt waar er op ingezoomd is bij het starten van de pagina en hierna rustig uitzoomd -->
+                <div id="zoomStartpunt" class="zoomTarget" data-targetsize="0.02" data-duration="10"></div>
+
+                <!--TOOLTIPS VAN ALLE LEVELS-->
+
+            </div>
+
+        </div>
+
+
+
+        <div class="popup" id="popup">
+            <div class="popup-inner">
+
+                <a id="sluitModal" class="popup__close title-font" href="#"
+                    onclick="setTimeout(terugNaarStart, 300);">X</a>
+
+                <!--Verticale "Brightest" in de linkerkant van modal-->
+                <div class="popup__photo">
+                    <p id="logo-text-modal">brigh<span>test</span></p>
+                </div>
+
+                <!--Alle inhoud rechterkant modal-->
+                <div class="popup__text">
+                    <h1 id="modal-title">Great King</h1>
+
+                    <!--subtitle (experience jaren)-->
+                    <p id="modal-experience" class="modal-expierence">141</p>
+
+                    <!--Container met alle accorions met de nodige skills per categorie-->
+                    <div id="accordion-container" class="accordion-wrapper">
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- Video Frame -->
+                <div class="FrameBox">
+
+                    <a id="goBackBtn" class="FrameCloseBtn" onclick="SlidInOutBOX()"> x </a>
+
+                    <div id="ContentBox">
+
+                    </div>
+                </div>
+                <!-- -->
+            </div>
+
+        </div>
+
+
+
+
+    </main>
+
+
+    <footer>
+
+    </footer>
+
+
+
+
+</body>
+
+<!--Link voor de js zoom funcionaliteit-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+<script type="text/javascript" src="./Js/index1.js"></script>
+
+
+<!--js files voor zoom functionaliteit-->
+<script type="text/javascript" src="./Js/jquery.zoomooz-helpers.js"></script>
+<script type="text/javascript" src="./Js/jquery.zoomooz-anim.js"></script>
+<script type="text/javascript" src="./Js/jquery.zoomooz-core.js"></script>
+<script type="text/javascript" src="./Js/jquery.zoomooz-zoomTarget.js"></script>
+<script type="text/javascript" src="./Js/purecssmatrix.js"></script>
+<script type="text/javascript" src="./Js/sylvester.src.stripped.js"></script>
+
+
+</script>
+
+</html>

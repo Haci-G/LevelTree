@@ -103,10 +103,7 @@ footer {
   top: 40%;
   left: 51%;
 }
-.tooltipTest {
-  top: 80%;
-  left: 0%;
-}
+
 .tooltip1 {
   top: 72%;
   left: 84%;
@@ -186,12 +183,7 @@ footer {
 }
 
 /*positie en grootte van de tooltip div met de text in*/
-.w_lvtest {
-  height: 90px;
-  width: 135px;
-  top: 15px;
-  left: -50px;
-}
+
 .w_lv1 {
   height: 90px;
   width: 135px;
@@ -807,8 +799,7 @@ section .thumbnail:hover {
   .circle-legende {
     margin-right: 8px;
   }
-  #tree {
-  }
+ 
 }
 
 @media screen and (max-device-width: 450px) {
