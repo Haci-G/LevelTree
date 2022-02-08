@@ -951,11 +951,9 @@ const DataLevels = [
             {
                 "SkillName": "Qualifications",
                 "tester": [
-                    //GENERAL
                     "Acceleration track: leading others & the company"
                 ],
-                "techincal": [
-                    //SPECIFIC
+                "technical": [
                     "BDD Practitioner",
                     "ISTQB Advanced Certified: Test Manager"
                 ]
