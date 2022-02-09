@@ -1,13 +1,14 @@
 
-/*Fix voor probleem met de uilijning van Brightest text in de modal bij gebruik van Safari*/
 let isBrowserSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
 // arrow  bottom margin need to be 2.4 em in firefox
 
 //Bij het laden van de pagina wordt er rustig uigezoomd tot de boom volledig zichtbaar is
 window.addEventListener('load', (event) => {
-    // document.getElementById("zoomStartpunt").click();
-    //setTimeout(terugNaarStart, 500);
+     /*document.getElementById("zoomStartpunt").click();
+     setTimeout(terugNaarStart, 500);*/
+
+    /*Fix voor probleem met de uilijning van Brightest text in de modal bij gebruik van Safari*/
     if (isBrowserSafari) {
         document.getElementById('logo-text-modal').style.marginTop = "280%";
         document.getElementsByClassName('item-legende')[0].style.width = "250px";
@@ -36,9 +37,10 @@ function CreateScripts() {
 
     })
 
-};
+}
 
 
+//Alle JS files
 let JsScript = [
     {
         "type": "text/javascript",
@@ -81,7 +83,7 @@ function terugNaarStart() {
 
 }
 
-
+// functie om alle tooltips te genereren
 function CreateToolTips() {
 
     DataLevels.forEach((level) => {
@@ -155,12 +157,6 @@ function OpenModel(lvl_Id) {
     accordionContainer.innerHTML = ""; // Empty element
 
     // Loop through Level Experience Data
-
-
-
-
-
-
     lvl.levelExperience.forEach((Experience, index) => {
 
         /*Div voor de inhoud van de accordion*/
@@ -168,7 +164,7 @@ function OpenModel(lvl_Id) {
 
         //Inhoud van de accordion
 
-        ulElement = document.createElement("ul");
+        let ulElement = document.createElement("ul");
         containerContentAccordion.appendChild(ulElement);
 
         for (const [key, value] of Object.entries(Experience)) {
@@ -280,10 +276,6 @@ function CreateAccordionContent(Name, index, mainDiv) {
     inputAccordion.setAttribute("type", "radio");
     inputAccordion.setAttribute("name", "radio-a");
 
-    //Mag alleen maar voor de eerste true zijn
-    // if (index == 0) {
-    //     inputAccordion.checked = true;
-    // }
 
     accordion.appendChild(inputAccordion);
 
@@ -294,6 +286,10 @@ function CreateAccordionContent(Name, index, mainDiv) {
     labelAccordion.setAttribute("for", "check" + index);
     labelAccordion.innerHTML = Name;
 
+    //Eerste accordion moet actief zijn
+    if (index == 0) {
+        inputAccordion.checked = true;
+    }
     accordion.appendChild(labelAccordion);
 
     let containerContentAccordion = document.createElement("div");
@@ -478,12 +474,8 @@ function openInfoFrame(thumbnailEle) {
 }
 
 
-
+//Array met alle data voor de legende onderaan de pagina (text, color, classnames)
 const DataLegend = [
-    //  {
-    //    name: "Brightest",
-    //    color: "yellow"
-    //  },
     {
         name: "Manual Test Expertise",
         color: "#63b330",
@@ -506,7 +498,7 @@ CreateLegendElement();
 
 
 
-// Template
+// Alle data voor de modals (title, experience, dropdowns, carousel,...)
 const DataLevels = [
     {
         "id": 1,
@@ -522,7 +514,7 @@ const DataLevels = [
                     "Teamwork",
                     "Quality focussed",
                     "Professional attitude",
-                    "Bright Ambassador (Like & share Brightest posts, verbal,..."
+                    "Bright Ambassador (Like & share Brightest posts, verbal,...)"
                 ],
 
             },
@@ -530,13 +522,13 @@ const DataLevels = [
                 "SkillName": "Technical Skills",
                 "tester": [
                     "Understanding code",
-                    "Test Automatization (tooling) basics",
+                    "Test Automation (tooling) basics",
                     "SQL, XML, JSON",
                     "Test Management Tools basics (incl. defect mngt)"
 
                 ],
                 "technical": [
-                    "Automatization Framework basics",
+                    "Automation Framework basics",
                     "Programming skills basics",
                     "Performance Testing basics"
                 ],
@@ -563,7 +555,7 @@ const DataLevels = [
             {
                 "id": 11,
                 "type": "text",
-                "title": "Nick Sheeren",
+                "title": "Nick 's Heeren",
                 "image": "PersonB.jpg",
                 "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
             },
@@ -579,19 +571,13 @@ const DataLevels = [
                 "title": "Conversations with a software tester",
                 "videoId": "LnRFrIe-1gI"
             },
-            {
-                "id": 14,
-                "type": "yt",
-                "title": "Conversations with a software tester",
-                "videoId": "LnRFrIe-1gI"
-            },
         ]
     },
     {
         "id": 2,
         "title": "LEVEL 2 AGILE TEST ENGINEER",
         "name": "Agile test engineer",
-        "experience": "< 1 year experience",
+        "experience": "> 1 year experience",
         "levelExperience": [
             {
                 "SkillName": "Soft Skills",
@@ -680,7 +666,7 @@ const DataLevels = [
                     "Build Domain Expertise (sector, QA related topics)"
                 ],
                 "lead": [
-                    "basic project estimates & reporting"
+                    "Basic project estimates & reporting"
                 ]
             },
             {
@@ -758,7 +744,7 @@ const DataLevels = [
             {
                 "SkillName": "Test Skills",
                 "tester": [
-                    "Shift-left (able to assess testing pyramid)",
+                    "Shift-left skills (able to assess testing pyramid)",
                     "Content Coaching (sector, QA related topics)",
                 ],
                 "lead": [
@@ -780,7 +766,6 @@ const DataLevels = [
                     "IREB certification"
                 ],
                 "technical": [
-                    "Prince2 Certified",
                     "SwITch final assignment (for those who didn't follow swITch)",
                     "DevOps Advanced training",
                 ],
@@ -795,13 +780,13 @@ const DataLevels = [
             {
                 "id": 18, // needs to be UNIEK
                 "type": "yt",
-                "title": "Title",
+                "title": "Partnership PXL | Test Automation Track",
                 "videoId": "jGZF-ChYJ3A"
             },
             {
                 "id": 19,
                 "type": "yt",
-                "title": "sdfssds",
+                "title": "#BrightChallenge31",
                 "videoId": "w1HdAe9rjig"
             },
             {
@@ -857,7 +842,7 @@ const DataLevels = [
                 ],
                 "lead": [
                     "Project planning & organisation (budget, resources, approach, ...)",
-                    "IREB certification", "Assist in Assessing a QA organisation (assist Brightscan)",
+                    "Assist in Assessing a QA organisation (assist Brightscan)",
                 ]
             }
             ,
@@ -888,13 +873,13 @@ const DataLevels = [
             {
                 "id": 20, // needs to be UNIEK
                 "type": "yt",
-                "title": "Title",
+                "title": "Conversations with a software tester",
                 "videoId": "LnRFrIe-1gI"
             },
             {
                 "id": 21,
                 "type": "yt",
-                "title": "sdfssds",
+                "title": "Partnership PXL | Test Automation Track",
                 "videoId": "jGZF-ChYJ3A"
             },
             {
@@ -915,7 +900,7 @@ const DataLevels = [
             {
                 "SkillName": "Soft Skills",
                 "tester": [
-                    "Market orientation (commerciele ingesteldheid, snappen wat nodig voor de klant & hoe vertalen nr onze solutions / cross selling)",
+                    "Market orientation (commerciele ingesteldheid, snappen wat nodig voor de klant & hoe vertalen naar onze solutions / cross selling)",
                     "Independence (multiple team decisions, organisation,...)",
                     "Leadership skills (motivation, multiple team vision alignment, ...)",
                     "Coach teams (dev, analyst, PO, ...)",
@@ -931,6 +916,13 @@ const DataLevels = [
                     "Set up test automation process (CI/CD, testing pyramid, ...) "
                 ]
             },
+            {
+                "SkillName": "Test Skills",
+                "lead": [
+                    "Set up test process (shift-left, ...)"
+                ]
+            }
+            ,
             {
                 "SkillName": "BTO/C Skills",
                 "tester": [
@@ -949,7 +941,9 @@ const DataLevels = [
                     "Acceleration track: leading others & the company"
                 ],
                 "technical": [
-                    "BDD Practitioner",
+                    "BDD Practitioner"
+                ],
+                "lead": [
                     "ISTQB Advanced Certified: Test Manager"
                 ]
             }
@@ -958,13 +952,13 @@ const DataLevels = [
             {
                 "id": 23, // needs to be UNIEK
                 "type": "yt",
-                "title": "Title",
+                "title": "Shift-left | Test Automation",
                 "videoId": "ElZ_2bb25lA"
             },
             {
                 "id": 24,
                 "type": "yt",
-                "title": "sdfssds",
+                "title": "Conversations with a software tester",
                 "videoId": "LnRFrIe-1gI"
             },
             {
@@ -977,7 +971,7 @@ const DataLevels = [
             {
                 "id": 26,
                 "type": "text",
-                "title": "Nick sHeeren",
+                "title": "Nick 's Heeren",
                 "image": "PersonB.jpg",
                 "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
             },
@@ -1033,7 +1027,7 @@ const DataLevels = [
             {
                 "id": 27,
                 "type": "yt",
-                "title": "zefdzefzef",
+                "title": "Conversations with a software tester",
                 "videoId": "LnRFrIe-1gI"
             },
             {
@@ -1079,13 +1073,13 @@ const DataLevels = [
             {
                 "id": 29,
                 "type": "yt",
-                "title": "zefdzefzef",
+                "title": "Shift-left | Test Automation",
                 "videoId": "ElZ_2bb25lA"
             },
             {
                 "id": 30,
                 "type": "yt",
-                "title": "Are You A Tester",
+                "title": "Conversations with a software tester",
                 "videoId": "LnRFrIe-1gI"
             },
             {
@@ -1098,7 +1092,7 @@ const DataLevels = [
             {
                 "id": 32,
                 "type": "text",
-                "title": "Nick Sheeren",
+                "title": "Nick 's Heeren",
                 "image": "PersonB.jpg",
                 "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
             },
@@ -1140,7 +1134,7 @@ const DataLevels = [
             {
                 "id": 34,
                 "type": "yt",
-                "title": "zefdzefzef",
+                "title": "Shift-left | Test Automation",
                 "videoId": "ElZ_2bb25lA"
             },
             {
@@ -1153,13 +1147,13 @@ const DataLevels = [
             {
                 "id": 36,
                 "type": "yt",
-                "title": "zefdzefzef",
+                "title": "Partnership PXL | Test Automation Track",
                 "videoId": "jGZF-ChYJ3A"
             },
             {
                 "id": 37,
                 "type": "yt",
-                "title": "zefdzefzef",
+                "title": "#BrightChallenge31",
                 "videoId": "w1HdAe9rjig"
             },
         ]
