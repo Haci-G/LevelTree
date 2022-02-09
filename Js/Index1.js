@@ -1,11 +1,6 @@
 
 /*Fix voor probleem met de uilijning van Brightest text in de modal bij gebruik van Safari*/
 let isBrowserSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-if (isBrowserSafari) {
-    document.getElementById('logo-text-modal').style.marginTop = "280%";
-    document.getElementsByClassName('item-legende')[0].style.width = "250px";
-
-}
 
 // arrow  bottom margin need to be 2.4 em in firefox
 
@@ -13,10 +8,10 @@ if (isBrowserSafari) {
 window.addEventListener('load', (event) => {
     // document.getElementById("zoomStartpunt").click();
     //setTimeout(terugNaarStart, 500);
-
-
-
-
+    if (isBrowserSafari) {
+        document.getElementById('logo-text-modal').style.marginTop = "280%";
+        document.getElementsByClassName('item-legende')[0].style.width = "250px";
+    }
 });
 
 
@@ -124,7 +119,7 @@ function CreateLegendElement() {
     DataLegend.forEach((legend) => {
 
         legendDiv.innerHTML += `
-            <div class="item-legende">    
+            <div class="item-legende">
                 <div class="circle-legende ${legend.uniqueClassName}"></div>
                 <p>${legend.name}</p>
             </div>
@@ -244,7 +239,7 @@ function OpenModel(lvl_Id) {
 
         // add arrow when the are more then 2 item.
 
-        // check later 
+        // check later
 
         let buttonEffect = false;
         if (SectionCarousel.childElementCount > 3) {
@@ -511,7 +506,7 @@ CreateLegendElement();
 
 
 
-// Template 
+// Template
 const DataLevels = [
     {
         "id": 1,
