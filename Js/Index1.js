@@ -11,8 +11,10 @@ window.addEventListener('load', (event) => {
     /*Fix voor probleem met de uilijning van Brightest text in de modal bij gebruik van Safari*/
     if (isBrowserSafari) {
         document.getElementById('logo-text-modal').style.marginTop = "280%";
-        document.getElementsByClassName('item-legende')[0].style.width = "250px";
+       // document.getElementsByClassName('item-legende')[0].style.width = "250px";
     }
+
+
 });
 
 

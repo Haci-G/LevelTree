@@ -148,7 +148,7 @@ footer {
 .circle-legende {
   width: 15px;
   height: 15px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 10px;
   margin-right: 20px;
 }
@@ -827,8 +827,6 @@ section .thumbnail:hover {
 }
 */
 
-
-
 #goBackBtn {
   background: none;
   font-size: xx-large;
@@ -906,191 +904,186 @@ section .thumbnail:hover {
 }
 /* END */
 
-@media screen and (max-device-width: 1100px) {
-  /*  .item-legende p {
-    font-size: x-small;
-  }*/
+/* season Div*/
+
+.season {
+  width: 35%;
+  height: 24%;
+  z-index: -1;
+  background: #1c2b2d;
+  position: absolute;
+  bottom: 5.3%;
+  left: 33%;
+}
+
+.winter {
+  background-image: radial-gradient(
+    circle at 60% 350%,
+    #eee 70%,
+    transparent 70.1%
+  );
+}
+
+/* END */
+
+@media screen and (max-device-width: 850px) {
+  #tree {
+    transform: rotate(-1deg);
+    width: 80%;
+    margin-left: 95px;
+  }
+
+  .tooltip1 {
+    top: 70%;
+    left: 78%;
+  }
+
+  .tooltip2 {
+    top: 65%;
+    left: 11%;
+  }
+  .tooltip3 {
+    top: 50%;
+    left: 89%;
+  }
+  .tooltip4 {
+    top: 38%;
+    left: 15%;
+  }
+  .tooltip5 {
+    top: 28%;
+    left: 94%;
+  }
+  .tooltip6 {
+    top: 11%;
+    left: 85%;
+  }
+  .tooltip7 {
+    top: 9%;
+    left: 16%;
+  }
+  .tooltip8 {
+    top: 1%;
+    left: 58%;
+  }
+  .tooltip9 {
+    top: -1%;
+    left: 33%;
+  }
   .popup__text {
     padding: 2em;
   }
-}
+  #goBackBtn {
+    padding: 5%;
+  }
 
-@media screen and (min-device-height: 1200px) {
-  #container-boom {
-    top: 8vh;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    height: 92vh;
-    width: 45%;
-    max-height: 2000px;
-    max-width: 1200px;
-    min-width: 1000px;
-  }
-}
-
-@media screen and (max-device-width: 950px) {
-  #header-title {
-    font-size: x-large;
-  }
-  #logoBrightest {
-    height: 85px;
-  }
-  #container-boom {
-    top: 10vh;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    height: 92vh;
-    width: 45%;
-    max-height: 2000px;
-    max-width: 1100px;
-    min-width: 650px;
-  }
   .popup__photo {
     display: none;
   }
-  .FrameBox {
-    width: 100%;
-    border-radius: 50px;
+}
+
+@media screen and (max-device-width: 650px) {
+  #tree {
+    justify-content: center;
+    margin: auto;
   }
 
-  .FrameCloseBtn {
-    margin: 15px;
+  #container-boom {
+    top: 17vh;
+    width: 80%;
+    height: 70vh;
+    max-width: none;
+    min-width: auto;
+  }
+
+  #legende {
+    display: block;
+    text-align: center;
+    padding: 5px;
+  }
+  .item-legende {
+    margin: 5px auto;
+    width: 60%;
+    text-align: center;
+  }
+  .item-legende p {
+    font-size: medium;
+  }
+
+  .tooltip1 {
+    top: 70%;
+    left: 75%;
+  }
+
+  .tooltip2 {
+    top: 64%;
+    left: 6%;
+  }
+  .tooltip3 {
+    top: 50%;
+    left: 85%;
+  }
+  .tooltip4 {
+    top: 37%;
+    left: 8%;
+  }
+  .tooltip5 {
+    top: 28%;
+    left: 90%;
+  }
+  .tooltip6 {
+    top: 9%;
+    left: 80%;
+  }
+  .tooltip7 {
+    top: 9%;
+    left: 8%;
+  }
+  .tooltip8 {
+    top: 1%;
+    left: 58%;
+  }
+  .tooltip9 {
+    top: -2%;
+    left: 26%;
+  }
+  .popup__text {
+    padding: 2em;
+  }
+
+  #logoBrightest {
+    height: 55px;
+  }
+
+  .popup-inner {
+    width: 90%;
+    border-radius: 5%;
+    border: none;
+  }
+  .FrameBox {
+    width: 100%;
+    border-radius: 5%;
+  }
+  .testimonialText {
+    height: 55vh;
   }
 }
 
-@media screen and (max-device-width: 800px) {
-  #container-boom {
-    top: 10vh;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    height: 90vh;
-    width: 40%;
-    max-height: 2000px;
-    max-width: 1100px;
-    min-width: 650px;
-  }
-  .item-legende {
-    width: 200px;
-  }
+@media screen and (max-device-width: 360px) {
   .item-legende p {
     font-size: small;
   }
-  .circle-legende {
-    margin-right: 8px;
-  }
-}
-
-@media screen and (max-device-width: 450px) {
-  .popup-inner {
-    width: 90%;
-    height: 100%;
-  }
-  /*MAIN met de boom en de levels*/
-  #container-boom {
-    top: 20vh;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    height: 93vh;
-    width: 44%;
-    max-height: 2000px;
-    max-width: 1100px;
-    min-width: 700px;
-    bottom: -10px;
-  }
-  #tree {
-    z-index: 5;
-    display: block;
-    width: 85vw;
-    height: 65vh;
-    margin-left: 6%;
-    margin-top: 0%;
-  }
-  #zoomStartpunt {
-    z-index: 1;
-    position: absolute;
-    height: 10px;
-    width: 10px;
-    top: 44%;
-    left: 26%;
-  }
-  .tooltip1 {
-    top: 50%;
-    left: 46%;
-  }
-  .tooltip2 {
-    top: 40%;
-    left: 2%;
-  }
-  .tooltip3 {
-    top: 36%;
-    left: 52%;
-  }
-  .tooltip4 {
-    top: 26%;
-    left: 5%;
-  }
-  .tooltip5 {
-    top: 19%;
-    left: 54%;
-  }
-  .tooltip6 {
-    top: 7%;
-    left: 49%;
-  }
-  .tooltip7 {
-    top: 6%;
-    left: 6%;
-  }
-  .tooltip8 {
-    top: 2%;
-    left: 34%;
-  }
-  .tooltip9 {
-    top: 0%;
-    left: 17%;
-  }
-  #legende {
-    width: 100%;
-    margin: 0 22.5%;
-    background-color: #f4c709;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    display: inline-block;
-  }
-  .item-legende {
-    width: 55%;
-    margin: 5px;
-  }
-
-  .FrameBox {
-    display: block;
-    transition: all 1s ease-in-out;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    position: absolute;
-    top: 90%;
-    right: 0%;
-    z-index: 1;
-    background-color: #f4f4f4;
-    width: 100%;
-    height: 50%;
-    z-index: 3;
-    border-radius: 5px;
+  .testimonialText {
+    text-align: left;
   }
 
   #goBackBtn {
-    padding: 7%;
+    margin-top: 10px;
+    margin-left: 10px;
   }
-  #ContentBox {
-    margin: 0px 5%;
-    width: 100%;
-    height: 60%;
+
+  .popup-inner,
+  .FrameBox {
+    border-radius: 0;
   }
 }
