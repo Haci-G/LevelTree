@@ -10,8 +10,10 @@ window.addEventListener('load', (event) => {
     //setTimeout(terugNaarStart, 500);
     if (isBrowserSafari) {
         document.getElementById('logo-text-modal').style.marginTop = "280%";
-        document.getElementsByClassName('item-legende')[0].style.width = "250px";
+       // document.getElementsByClassName('item-legende')[0].style.width = "250px";
     }
+
+
 });
 
 
