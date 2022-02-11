@@ -21,7 +21,6 @@ function browserChecker(browserUser) {
         browserName = "No browser detection";
     }
 
-
     console.log(browserName); // test 
 
     if (browserName == browserUser) {
@@ -33,10 +32,6 @@ function browserChecker(browserUser) {
 }
 
 
-
-
-// arrow  bottom margin need to be 2.4 em in firefox
-
 //Bij het laden van de pagina wordt er rustig uigezoomd tot de boom volledig zichtbaar is
 window.addEventListener('load', (event) => {
     /*document.getElementById("zoomStartpunt").click();
@@ -46,10 +41,6 @@ window.addEventListener('load', (event) => {
     if (browserChecker("safari")) {
         document.getElementById('logo-text-modal').style.marginTop = "280%";
     }
-
-
-
-
 });
 
 
@@ -58,8 +49,7 @@ if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
     window.location.href = "home1.html";
 }
 
-
-
+//
 function CreateScripts() {
 
     JsScript.forEach((e) => {
@@ -69,14 +59,11 @@ function CreateScripts() {
 
         referenceNode = document.querySelector('body');
 
-
         referenceNode.appendChild(scriptTag);
 
     })
 
 }
-
-
 //Alle JS files
 let JsScript = [
     {
@@ -106,6 +93,7 @@ let JsScript = [
         "src": "sylvester.src.stripped.js"
     },
 ]
+
 
 
 function terugNaarStart() {
