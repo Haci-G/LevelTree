@@ -1190,4 +1190,7 @@ section .thumbnail:hover {
   .FrameBox {
     border-radius: 0;
   }
+  .popup-inner {
+    height: 70%;
+  }
 }
