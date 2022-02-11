@@ -1,18 +1,53 @@
 
-let isBrowserSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+//let isBrowserSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+
+function browserChecker(browserUser) {
+
+    let userAgent = navigator.userAgent;
+    let browserName;
+
+    if (userAgent.match(/chrome|chromium|crios/i)) {
+        browserName = "chrome";
+    } else if (userAgent.match(/firefox|fxios/i)) {
+        browserName = "firefox";
+    } else if (userAgent.match(/safari/i)) {
+        browserName = "safari";
+    } else if (userAgent.match(/opr\//i)) {
+        browserName = "opera";
+    } else if (userAgent.match(/edg/i)) {
+        browserName = "edge";
+    } else {
+        browserName = "No browser detection";
+    }
+
+
+    console.log(browserName); // test 
+
+    if (browserName == browserUser) {
+        return true;
+    }
+    return false;
+
+
+}
+
+
+
 
 // arrow  bottom margin need to be 2.4 em in firefox
 
 //Bij het laden van de pagina wordt er rustig uigezoomd tot de boom volledig zichtbaar is
 window.addEventListener('load', (event) => {
-     /*document.getElementById("zoomStartpunt").click();
-     setTimeout(terugNaarStart, 500);*/
+    /*document.getElementById("zoomStartpunt").click();
+    setTimeout(terugNaarStart, 500);*/
 
     /*Fix voor probleem met de uilijning van Brightest text in de modal bij gebruik van Safari*/
-    if (isBrowserSafari) {
+    if (browserChecker("safari")) {
         document.getElementById('logo-text-modal').style.marginTop = "280%";
-       // document.getElementsByClassName('item-legende')[0].style.width = "250px";
     }
+
+
 
 
 });
@@ -317,6 +352,10 @@ function CreateArrowCarousel(arrowSide, dataSlide) {
     arrow.setAttribute("role", "button");
     arrow.setAttribute("id", "slide-" + arrowSide);
     arrow.setAttribute("data-slide", dataSlide);
+
+    if (browserChecker("firefox")) {
+        arrow.style.marginBottom = "2.43em";
+    }
 
     spanSign = document.createElement('span');
     if (arrowSide == 'left') {
