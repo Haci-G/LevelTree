@@ -20,15 +20,10 @@ function browserChecker(browserUser) {
     } else {
         browserName = "No browser detection";
     }
-
-    console.log(browserName); // test 
-
     if (browserName == browserUser) {
         return true;
     }
     return false;
-
-
 }
 
 
@@ -111,6 +106,10 @@ function terugNaarStart() {
 // functie om alle tooltips te genereren
 function CreateToolTips() {
 
+    // testing Fetch  request?!
+    //let DataLevels = await fetch("http://localhost:5001/Levels").then((response) => response.json())
+    // console.log(DataLevels);
+
     DataLevels.forEach((level) => {
 
         let toolTipDiv = document.createElement('div');
@@ -159,9 +158,11 @@ function CreateLegendElement() {
 function OpenModel(lvl_Id) {
 
 
+    // Fetch  request  lvl_Id (Testing) 
+    // let lvl = await fetch(`http://localhost:5001/Levels?id=${lvl_Id}`).then((response) => response.json()).then((d) => d[0])
+    // console.log(lvl);
 
-    lvl = DataLevels.find(x => x.id == lvl_Id);
-
+    let lvl = DataLevels.find(x => x.id == lvl_Id);
 
     document.querySelector("header").style.display = "none";
 
@@ -525,10 +526,11 @@ CreateLegendElement();
 
 
 
+//Alle data voor de modals(title, experience, dropdowns, carousel, ...)
 
-
-// Alle data voor de modals (title, experience, dropdowns, carousel,...)
 const DataLevels = [
+
+    //---------------------------LEVEL1---------------------------
     {
         "id": 1,
         "title": "LEVEL 1 AGILE TEST ENGINEER",
@@ -602,6 +604,7 @@ const DataLevels = [
             },
         ]
     },
+    //---------------------------LEVEL2---------------------------
     {
         "id": 2,
         "title": "LEVEL 2 AGILE TEST ENGINEER",
@@ -654,6 +657,7 @@ const DataLevels = [
             }
         ]
     },
+    //---------------------------LEVEL3---------------------------
     {
         "id": 3,
         "title": "LEVEL 3 AGILE TEST AUTOMATION ENGINEER",
@@ -739,6 +743,7 @@ const DataLevels = [
             },
         ]
     },
+    //---------------------------LEVEL4---------------------------
     {
         "id": 4,
         "title": "LEVEL 4 AGILE TEST COORDINATOR",
@@ -828,6 +833,7 @@ const DataLevels = [
         ]
 
     },
+    //---------------------------LEVEL5---------------------------
     {
         "id": 5,
         "title": "LEVEL 5 PRO",
@@ -920,6 +926,7 @@ const DataLevels = [
             },
         ]
     },
+    //---------------------------LEVEL6---------------------------
     {
         "id": 6,
         "title": "LEVEL 6 JEDI",
@@ -1006,6 +1013,7 @@ const DataLevels = [
             },
         ]
     },
+    //---------------------------LEVEL7---------------------------
     {
         "id": 7,
         "title": "LEVEL 7 CZAR",
@@ -1069,6 +1077,7 @@ const DataLevels = [
         ]
 
     },
+    //---------------------------LEVEL8---------------------------
     {
         "id": 8,
         "title": "LEVEL 8 GURU",
@@ -1136,6 +1145,7 @@ const DataLevels = [
         ]
 
     },
+    //---------------------------LEVEL9---------------------------
     {
         "id": 9,
         "title": "LEVEL 9 WZARD",
@@ -1187,12 +1197,6 @@ const DataLevels = [
             },
         ]
     }
-
-
-
 ]
 
-
-// Data Need to come before the objects
-// are initialized
 CreateToolTips();

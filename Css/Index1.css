@@ -927,7 +927,7 @@ section .thumbnail:hover {
 
 /* END */
 
-@media screen and (max-device-width: 850px) {
+@media only screen and (max-width: 850px) {
   #tree {
     transform: rotate(-1deg);
     width: 80%;
@@ -983,7 +983,7 @@ section .thumbnail:hover {
   }
 }
 
-@media screen and (max-device-width: 650px) {
+@media only screen and (max-width: 650px) {
   #tree {
     justify-content: center;
     margin: auto;
@@ -1071,7 +1071,7 @@ section .thumbnail:hover {
   }
 }
 
-@media screen and (max-device-width: 360px) {
+@media only screen and (max-width: 360px) {
   .item-legende p {
     font-size: small;
   }
@@ -1087,5 +1087,8 @@ section .thumbnail:hover {
   .popup-inner,
   .FrameBox {
     border-radius: 0;
+  }
+  .popup-inner {
+    height: 70%;
   }
 }
