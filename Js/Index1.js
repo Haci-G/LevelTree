@@ -1,6 +1,4 @@
 
-//let isBrowserSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-
 
 function browserChecker(browserUser) {
 
@@ -32,19 +30,58 @@ window.addEventListener('load', (event) => {
     /*document.getElementById("zoomStartpunt").click();
     setTimeout(terugNaarStart, 500);*/
 
+    //Functie om achtergrond aan te passen naar gelang het seizoen
+    CheckSeizoen();
+
     /*Fix voor probleem met de uilijning van Brightest text in de modal bij gebruik van Safari*/
     if (browserChecker("safari")) {
         document.getElementById('logo-text-modal').style.marginTop = "280%";
     }
 });
 
+//Check om te kijken welk seizoen we nu zijn. Achtergrond past zich aan naargelang het seizoen
+function CheckSeizoen(){
+    let today = new Date();
+    let dd = String(today.getDate()).padStart(2, '0');
+    let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    let yyyy = today.getFullYear();
+    today = mm + '/' + dd + '/' + yyyy;
+
+    const d = new Date(today);
+
+    let seasonArray = [
+        {name: 'Spring', date: new Date(d.getFullYear(),2,(d.getFullYear() % 4 === 0) ? 19 : 20).getTime()},
+        {name: 'Summer', date: new Date(d.getFullYear(),5,(d.getFullYear() % 4 === 0) ? 20 : 21).getTime()},
+        {name: 'Autumn', date: new Date(d.getFullYear(),8,(d.getFullYear() % 4 === 0) ? 22 : 23).getTime()},
+        {name: 'Winter', date: new Date(d.getFullYear(),11,(d.getFullYear() % 4 === 0) ? 20 : 21).getTime()}
+    ];
+
+    const season = seasonArray.filter(({ date }) => date <= d).slice(-1)[0] || {name: "Winter"}
+    console.log(season.name);
+
+    switch (season.name){
+        case "Winter":
+            console.log("Het seizoen is nu Winter");
+        break;
+        case "Autumn":
+            console.log("Het seizoen is nu Herfst");
+            break;
+        case "Summer":
+            console.log("Het seizoen is nu Zomer");
+            break;
+        default:
+            console.log("Het seizoen is nu Lente");
+    }
+}
 
 //Check of de pagina herladen wordt, zoja? ga terug naar de homepage. Oplossing voor bug met het laden van info in de modal.
 if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
     window.location.href = "home1.html";
 }
 
-//
+
+//Loopt over de "JsScripts" array en voegt alle nodige javascript links toe aan de pagina
+
 function CreateScripts() {
 
     JsScript.forEach((e) => {
@@ -59,6 +96,7 @@ function CreateScripts() {
     })
 
 }
+
 //Alle JS files
 let JsScript = [
     {
@@ -88,7 +126,6 @@ let JsScript = [
         "src": "sylvester.src.stripped.js"
     },
 ]
-
 
 
 function terugNaarStart() {
@@ -137,6 +174,7 @@ function CreateToolTips() {
 
 }
 
+// functie om de legende onderaan de pagina te genereren
 function CreateLegendElement() {
 
     let legendDiv = document.createElement('div');
@@ -154,7 +192,7 @@ function CreateLegendElement() {
     document.querySelector('footer').appendChild(legendDiv);
 }
 
-/* functions for Modal */
+/* functie voor de modal (aanmaken, openen en opvullen met de juiste info) */
 function OpenModel(lvl_Id) {
 
 
@@ -327,10 +365,6 @@ function CreateAccordionContent(Name, index, mainDiv) {
 
     return containerContentAccordion;
 }
-
-
-
-
 
 // create arrow
 function CreateArrowCarousel(arrowSide, dataSlide) {

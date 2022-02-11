@@ -111,6 +111,16 @@ header p,
   left: 51%;
 }
 
+/* seizoen animatie */
+
+#winter{
+  z-index: 1;
+  position: absolute;
+  height: 15%;
+  width: 15%;
+  bottom: 7%;
+  left: 90%;
+}
 /* END */
 /* Footer */
 footer {
