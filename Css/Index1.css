@@ -1069,6 +1069,7 @@ section .thumbnail:hover {
   .popup-inner {
     width: 90%;
     border-radius: 5%;
+    height: 75%;
     border: none;
   }
   .FrameBox {

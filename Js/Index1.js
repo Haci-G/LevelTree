@@ -1,20 +1,46 @@
-// Bool die nodig is
-let isBrowserSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
-// arrow  bottom margin need to be 2.4 em in firefox
+
+function browserChecker(browserUser) {
+
+    let userAgent = navigator.userAgent;
+    let browserName;
+
+    if (userAgent.match(/chrome|chromium|crios/i)) {
+        browserName = "chrome";
+    } else if (userAgent.match(/firefox|fxios/i)) {
+        browserName = "firefox";
+    } else if (userAgent.match(/safari/i)) {
+        browserName = "safari";
+    } else if (userAgent.match(/opr\//i)) {
+        browserName = "opera";
+    } else if (userAgent.match(/edg/i)) {
+        browserName = "edge";
+    } else {
+        browserName = "No browser detection";
+    }
+
+    console.log(browserName); // test 
+
+    if (browserName == browserUser) {
+        return true;
+    }
+    return false;
+
+
+}
+
 
 //Bij het laden van de pagina wordt er rustig uigezoomd tot de boom volledig zichtbaar is
 window.addEventListener('load', (event) => {
-     /*document.getElementById("zoomStartpunt").click();
-     setTimeout(terugNaarStart, 500);*/
+    /*document.getElementById("zoomStartpunt").click();
+    setTimeout(terugNaarStart, 500);*/
 
     //Functie om achtergrond aan te passen naar gelang het seizoen
     CheckSeizoen();
 
     /*Fix voor probleem met de uilijning van Brightest text in de modal bij gebruik van Safari*/
-    if (isBrowserSafari) {
+    if (browserChecker("safari")) {
         document.getElementById('logo-text-modal').style.marginTop = "280%";
-       // document.getElementsByClassName('item-legende')[0].style.width = "250px";
     }
 });
 
@@ -59,8 +85,8 @@ if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
 }
 
 
-
 //Loopt over de "JsScripts" array en voegt alle nodige javascript links toe aan de pagina
+
 function CreateScripts() {
 
     JsScript.forEach((e) => {
@@ -69,7 +95,6 @@ function CreateScripts() {
         scriptTag.src = './Js/' + e.src;
 
         referenceNode = document.querySelector('body');
-
 
         referenceNode.appendChild(scriptTag);
 
@@ -108,7 +133,6 @@ let JsScript = [
 ]
 
 
-//Nodig om van een modal terug naar de startpagina te gaan
 function terugNaarStart() {
 
     document.getElementById('tree').click();
@@ -350,6 +374,10 @@ function CreateArrowCarousel(arrowSide, dataSlide) {
     arrow.setAttribute("role", "button");
     arrow.setAttribute("id", "slide-" + arrowSide);
     arrow.setAttribute("data-slide", dataSlide);
+
+    if (browserChecker("firefox")) {
+        arrow.style.marginBottom = "2.43em";
+    }
 
     spanSign = document.createElement('span');
     if (arrowSide == 'left') {
