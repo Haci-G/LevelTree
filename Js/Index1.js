@@ -19,7 +19,7 @@ function browserChecker(browserUser) {
         browserName = "No browser detection";
     }
 
-    console.log(browserName); // test 
+    console.log(browserName); // test
 
     if (browserName == browserUser) {
         return true;
@@ -48,35 +48,46 @@ window.addEventListener('load', (event) => {
 function CheckSeizoen(){
     let today = new Date();
     let dd = String(today.getDate()).padStart(2, '0');
-    let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    let mm = String(today.getMonth() + 1).padStart(2, '0');
     let yyyy = today.getFullYear();
     today = mm + '/' + dd + '/' + yyyy;
 
     const d = new Date(today);
+    /*const d = new Date("9/24/2022");*/
 
     let seasonArray = [
-        {name: 'Spring', date: new Date(d.getFullYear(),2,(d.getFullYear() % 4 === 0) ? 19 : 20).getTime()},
-        {name: 'Summer', date: new Date(d.getFullYear(),5,(d.getFullYear() % 4 === 0) ? 20 : 21).getTime()},
-        {name: 'Autumn', date: new Date(d.getFullYear(),8,(d.getFullYear() % 4 === 0) ? 22 : 23).getTime()},
-        {name: 'Winter', date: new Date(d.getFullYear(),11,(d.getFullYear() % 4 === 0) ? 20 : 21).getTime()}
+        {name: 'lente', date: new Date(d.getFullYear(),2,(d.getFullYear() % 4 === 0) ? 19 : 20).getTime()},
+        {name: 'zomer', date: new Date(d.getFullYear(),5,(d.getFullYear() % 4 === 0) ? 20 : 21).getTime()},
+        {name: 'herfst', date: new Date(d.getFullYear(),8,(d.getFullYear() % 4 === 0) ? 22 : 23).getTime()},
+        {name: 'winter', date: new Date(d.getFullYear(),11,(d.getFullYear() % 4 === 0) ? 20 : 21).getTime()}
     ];
 
-    const season = seasonArray.filter(({ date }) => date <= d).slice(-1)[0] || {name: "Winter"}
-    console.log(season.name);
+    const season = seasonArray.filter(({ date }) => date <= d).slice(-1)[0] || {name: "winter"}
 
     switch (season.name){
-        case "Winter":
-            console.log("Het seizoen is nu Winter");
+        case "winter":
+            BackgroundAnimationDisplayChange(season.name.toLowerCase());
         break;
-        case "Autumn":
-            console.log("Het seizoen is nu Herfst");
+        case "herfst":
+            BackgroundAnimationDisplayChange(season.name.toLowerCase());
             break;
-        case "Summer":
-            console.log("Het seizoen is nu Zomer");
+        case "zomer":
+            BackgroundAnimationDisplayChange(season.name.toLowerCase());
             break;
         default:
-            console.log("Het seizoen is nu Lente");
+            BackgroundAnimationDisplayChange(season.name.toLowerCase());
     }
+    console.log()
+}
+
+// functie om per seizoen de juiste achtergrond animatie te laten zien
+function BackgroundAnimationDisplayChange(id) {
+    let alleItems = document.getElementsByClassName(id);
+    for (let i = 0; i < alleItems.length; i++){
+        alleItems[i].style.display = 'block';
+    }
+
+    document.getElementById(id).style.display = "block";
 }
 
 //Check of de pagina herladen wordt, zoja? ga terug naar de homepage. Oplossing voor bug met het laden van info in de modal.
