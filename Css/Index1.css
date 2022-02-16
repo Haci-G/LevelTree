@@ -167,10 +167,10 @@ header p,
   z-index: 1;
   display: none;
   position: absolute;
-  height: 15%;
-  width: 15%;
-  bottom: 7%;
-  left: 70%;
+  height: 20%;
+  width: 30%;
+  bottom: 4%;
+  left: 5%;
 }
 
 /*Alles van herfst*/
@@ -1029,7 +1029,7 @@ section .thumbnail:hover {
 
 /* END */
 
-@media screen and (max-device-width: 850px) {
+@media only screen and (max-width: 850px) {
   #tree {
     transform: rotate(-1deg);
     width: 80%;
@@ -1085,7 +1085,7 @@ section .thumbnail:hover {
   }
 }
 
-@media screen and (max-device-width: 650px) {
+@media only screen and (max-width: 650px) {
   #tree {
     justify-content: center;
     margin: auto;
@@ -1173,7 +1173,7 @@ section .thumbnail:hover {
   }
 }
 
-@media screen and (max-device-width: 360px) {
+@media only screen and (max-width: 360px) {
   .item-legende p {
     font-size: small;
   }

@@ -18,7 +18,6 @@ function browserChecker(browserUser) {
     } else {
         browserName = "No browser detection";
     }
-
     if (browserName == browserUser) {
         return true;
     }
@@ -208,7 +207,7 @@ function CreateLegendElement() {
 function OpenModel(lvl_Id) {
 
 
-    // Fetch  request  lvl_Id (Testing) 
+    // Fetch  request  lvl_Id (Testing)
     // let lvl = await fetch(`http://localhost:5001/Levels?id=${lvl_Id}`).then((response) => response.json()).then((d) => d[0])
     // console.log(lvl);
 
