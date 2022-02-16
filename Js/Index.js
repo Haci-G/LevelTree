@@ -393,7 +393,6 @@ alleDataLevels = [
             ["swITch track finalized", "technical"]
         ],
     },
-
     //---------------------------LEVEL3---------------------------
     {
         "id": 3,
