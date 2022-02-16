@@ -40,7 +40,7 @@ window.addEventListener('load', (event) => {
 });
 
 //Check om te kijken welk seizoen we nu zijn. Achtergrond past zich aan naargelang het seizoen
-function CheckSeizoen(){
+function CheckSeizoen() {
     let today = new Date();
     let dd = String(today.getDate()).padStart(2, '0');
     let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
@@ -50,19 +50,19 @@ function CheckSeizoen(){
     const d = new Date(today);
 
     let seasonArray = [
-        {name: 'Spring', date: new Date(d.getFullYear(),2,(d.getFullYear() % 4 === 0) ? 19 : 20).getTime()},
-        {name: 'Summer', date: new Date(d.getFullYear(),5,(d.getFullYear() % 4 === 0) ? 20 : 21).getTime()},
-        {name: 'Autumn', date: new Date(d.getFullYear(),8,(d.getFullYear() % 4 === 0) ? 22 : 23).getTime()},
-        {name: 'Winter', date: new Date(d.getFullYear(),11,(d.getFullYear() % 4 === 0) ? 20 : 21).getTime()}
+        { name: 'Spring', date: new Date(d.getFullYear(), 2, (d.getFullYear() % 4 === 0) ? 19 : 20).getTime() },
+        { name: 'Summer', date: new Date(d.getFullYear(), 5, (d.getFullYear() % 4 === 0) ? 20 : 21).getTime() },
+        { name: 'Autumn', date: new Date(d.getFullYear(), 8, (d.getFullYear() % 4 === 0) ? 22 : 23).getTime() },
+        { name: 'Winter', date: new Date(d.getFullYear(), 11, (d.getFullYear() % 4 === 0) ? 20 : 21).getTime() }
     ];
 
-    const season = seasonArray.filter(({ date }) => date <= d).slice(-1)[0] || {name: "Winter"}
+    const season = seasonArray.filter(({ date }) => date <= d).slice(-1)[0] || { name: "Winter" }
     console.log(season.name);
 
-    switch (season.name){
+    switch (season.name) {
         case "Winter":
             console.log("Het seizoen is nu Winter");
-        break;
+            break;
         case "Autumn":
             console.log("Het seizoen is nu Herfst");
             break;
@@ -83,7 +83,6 @@ if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
 //Loopt over de "JsScripts" array en voegt alle nodige javascript links toe aan de pagina
 
 function CreateScripts() {
-
     JsScript.forEach((e) => {
         let scriptTag = document.createElement('script');
         scriptTag.type = e.type;
@@ -92,9 +91,7 @@ function CreateScripts() {
         referenceNode = document.querySelector('body');
 
         referenceNode.appendChild(scriptTag);
-
     })
-
 }
 
 //Alle JS files
@@ -119,8 +116,6 @@ let JsScript = [
         "type": "text/javascript",
         "src": "jquery.zoomooz-core.js"
     },
-
-
     {
         "type": "text/javascript",
         "src": "sylvester.src.stripped.js"
@@ -141,12 +136,8 @@ function terugNaarStart() {
 }
 
 // functie om alle tooltips te genereren
+
 function CreateToolTips() {
-
-    // testing Fetch  request?!
-    //let DataLevels = await fetch("http://localhost:5001/Levels").then((response) => response.json())
-    // console.log(DataLevels);
-
     DataLevels.forEach((level) => {
 
         let toolTipDiv = document.createElement('div');
@@ -195,63 +186,33 @@ function CreateLegendElement() {
 /* functie voor de modal (aanmaken, openen en opvullen met de juiste info) */
 function OpenModel(lvl_Id) {
 
-
-    // Fetch  request  lvl_Id (Testing) 
-    // let lvl = await fetch(`http://localhost:5001/Levels?id=${lvl_Id}`).then((response) => response.json()).then((d) => d[0])
-    // console.log(lvl);
-
     let lvl = DataLevels.find(x => x.id == lvl_Id);
-
     document.querySelector("header").style.display = "none";
-
-
     /*LEVEL TITLE*/
     document.getElementById('modal-title').innerHTML = lvl.title;
-
     /*LEVEL EXPERIENCE*/
     document.getElementById('modal-experience').innerHTML = lvl.experience;
-
-
-
-
     /* LEVEL ACCORDIONS */
-
     let accordionContainer = document.getElementById('accordion-container');
-
     accordionContainer.innerHTML = ""; // Empty element
-
     // Loop through Level Experience Data
     lvl.levelExperience.forEach((Experience, index) => {
-
         /*Div voor de inhoud van de accordion*/
         let containerContentAccordion = CreateAccordionContent(Experience.SkillName, index, accordionContainer);
-
         //Inhoud van de accordion
-
         let ulElement = document.createElement("ul");
         containerContentAccordion.appendChild(ulElement);
-
         for (const [key, value] of Object.entries(Experience)) {
-
             if (key != "SkillName") {
-
-
                 for (const subValue of value) {
-
                     let liElement = document.createElement("li");
                     liElement.innerHTML = subValue;
-
                     liElement.classList.add(`cat-${key}`);
-
                     ulElement.appendChild(liElement);
-
                 }
             }
         }
-
     });
-
-
 
     if (lvl.Testimonials != null) {
 
@@ -261,54 +222,32 @@ function OpenModel(lvl_Id) {
         //Create Carousel Div ()
         let slideDiv = document.createElement("div");
         slideDiv.classList.add("slide-container");
-
         // create carousel slider
         let SectionCarousel = document.createElement('section');
         SectionCarousel.classList.add('box');
         SectionCarousel.setAttribute('id', 'slider');
-
-
         lvl.Testimonials.forEach((e, index) => {
-
             // create div : thumbnail for images
             let thumbnail = document.createElement('div');
-
-
             thumbnail.classList.add('thumbnail');
-
-
             thumbnail.setAttribute('data-title', e.title);
             thumbnail.setAttribute('data-id', e.id);
-
             // thumbnail Click EventListener
             thumbnail.addEventListener('click', function () {
                 openInfoFrame(this);
             })
-
-
-
             // create image for the thumbnail
             let imageThumbnail = CreateImageElementForCarouselThumbnail(e, index)
-
             thumbnail.append(imageThumbnail);
-
             SectionCarousel.appendChild(thumbnail);
-
         });
-
-
         // add arrow when the are more then 2 item.
-
         // check later
-
         let buttonEffect = false;
         if (SectionCarousel.childElementCount > 3) {
-
             // left arrow
             slideDiv.appendChild(CreateArrowCarousel('left', 'prev'));
-
             slideDiv.appendChild(SectionCarousel);
-
             // right arrow
             slideDiv.appendChild(CreateArrowCarousel('right', 'next'));
             buttonEffect = true;
@@ -317,13 +256,8 @@ function OpenModel(lvl_Id) {
             slideDiv.appendChild(SectionCarousel);
         }
         containerContentAccordion.appendChild(slideDiv);
-
         SliderEffect(buttonEffect);
-
     }
-
-
-
 }
 
 
@@ -1020,7 +954,7 @@ const DataLevels = [
         ],
         "Testimonials": [
             {
-                "id": 23, // needs to be UNIEK
+                "id": 23,
                 "type": "yt",
                 "title": "Shift-left | Test Automation",
                 "videoId": "ElZ_2bb25lA"
