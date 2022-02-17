@@ -1199,7 +1199,7 @@ function SeasonSwitch(obj) {
             obj.checked == false ? document.getElementById("spring").style.display = "none" : document.getElementById("spring").style.display = "block";
             break;
         case "Summer":
-            // Need to add sun effect behind the righte upper icon.
+            obj.checked == false ? document.getElementById("summer").style.display = "none" : document.getElementById("summer").style.display = "block";
             break;
         case "Winter":
             obj.checked == false ? (snowStorm.freeze() || snowStorm.stop()) : (snowStorm.resume() || snowStorm.start());
