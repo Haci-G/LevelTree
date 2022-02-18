@@ -20,7 +20,7 @@ var snowStorm = (function (window, document) {
   this.flakesMax = 50;           // Limit total amount of snow made (falling + sticking)
   this.flakesMaxActive = 50;      // Limit amount of snow falling at once (less = lower CPU use)
   this.animationInterval = 50;    // Theoretical "miliseconds per frame" measurement. 20 = fast + smooth, but high CPU use. 50 = more conservative, but slower
-  this.useGPU = true;             // Enable transform-based hardware acceleration, reduce CPU load.
+  this.useGPU = false;             // Enable transform-based hardware acceleration, reduce CPU load.
   this.className = null;          // CSS class name for further customization on snow elements
   this.excludeMobile = true;      // Snow is likely to be bad news for mobile phones' CPUs (and batteries.) By default, be nice.
   this.flakeBottom = null;        // Integer for Y axis snow limit, 0 or null for "full-screen" snow effect
