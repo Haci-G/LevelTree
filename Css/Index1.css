@@ -93,6 +93,128 @@ p {
   }
 }
 
+#autumn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  z-index: 0;
+}
+
+
+
+.leaves {
+  height: 100%;
+  position: absolute;
+}
+
+.leaf{
+  font-size: 25px;
+}
+.leaf1 {
+  position: absolute;
+  top:0;
+  animation: fall 8s linear infinite;
+}
+
+.leaf2 {
+  position: absolute;
+  top:-60px;
+  animation: fall2 14s linear infinite;
+}
+
+.leaf3 {
+  position: absolute;
+  top:-200px;
+  left:-100px;
+  animation: fall 15s linear infinite;
+}
+
+.leaf4 {
+  position: absolute;
+  top:-100px;
+  left:300px;
+  animation: fall2 10s linear infinite;
+}
+
+.leaf5 {
+  position: absolute;
+  top:-310px;
+  left:250px;
+  animation: fall3 8s linear infinite 2s;
+}
+
+@keyframes fall {
+  0% {top:0px; transform: translateX(-100px) rotateX(180deg);}
+  100% {top:1200px; transform: translateX(250px) rotateX(-180deg);}
+}
+
+@keyframes fall2 {
+  0% {top:-10px; transform: translateX(50px) rotateX(-90deg);}
+  100% {top:1200px; transform: translateX(-350px) rotateX(180deg);}
+}
+
+@keyframes fall3 {
+  0% {top:-50px; transform: translateX(0px) rotateX(-180deg);}
+  100% {top:1200px; transform: translateX(-400px) rotateX(180deg);}
+}
+
+@keyframes fall4 {
+  0% {top:-30px; transform: translateX(0px) rotateY(-180deg);}
+  100% {top:1200px; transform: translateX(-400px) rotateY(180deg);}
+}
+
+@keyframes fall5 {
+  0% {top:-40px; transform: translateX(-100px) rotateY(180deg);}
+  100% {top:1200px; transform: translateX(250px) rotateY(-180deg);}
+}
+
+.leaf6 {
+  position: absolute;
+  top:-50px;
+  left:-250px;
+  animation: fall3 8s linear infinite;
+}
+
+.leaf7 {
+  position: absolute;
+  top:-90px;
+  left:-350px;
+  animation: fall2 10s linear infinite;
+}
+
+.leaf8 {
+  position: absolute;
+  top:-430px;
+  left:550px;
+  animation: fall3 12s linear infinite;
+}
+
+.leaf9 {
+  position: absolute;
+  top:-430px;
+  left:150px;
+  animation: fall4 12s linear infinite;
+}
+
+.leaf10 {
+  position: absolute;
+  top:-40px;
+  left:450px;
+  animation: fall5 10s linear infinite;
+}
+
+.leaf11 {
+  position: absolute;
+  top:-100px;
+  left:650px;
+  animation: fall5 8s linear infinite;
+}
+
+
 /* HEADER */
 header {
   position: fixed;

@@ -1205,7 +1205,7 @@ function SeasonSwitch(obj) {
             obj.checked == false ? (snowStorm.freeze() || snowStorm.stop()) : (snowStorm.resume() || snowStorm.start());
             break;
         case "Autumn":
-            // Missing Autumn effect.
+            obj.checked == false ? document.getElementById("autumn").style.display = "none" : document.getElementById("autumn").style.display = "block";
             break;
     }
 }
@@ -1234,8 +1234,8 @@ function SpringSeason() {
         let x = 0;
         const speed = Math.random() * 0.7;
         const position = Math.random() * w - w / 2;
-        const maxTall = Math.random() * 70;
-        const maxSize = Math.random() * 8;
+        const maxTall = Math.random() * 80;
+        const maxSize = Math.random() * 9;
         const c = function (l, u) {
             return Math.round(Math.random() * (u || 255) + l || 0);
         };
