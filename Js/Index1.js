@@ -33,7 +33,7 @@ window.addEventListener('load', (event) => {
     //Functie om achtergrond aan te passen naar gelang het seizoen
     // CheckSeizoen();
 
-    /*Fix voor probleem met de uilijning van Brightest text in de modal bij gebruik van Safari*/
+    /*Fix voor probleem met de uitlijning van Brightest text in de modal bij gebruik van Safari*/
     if (browserChecker("safari")) {
         document.getElementById('logo-text-modal').style.marginTop = "280%";
     }
@@ -89,49 +89,6 @@ function BackgroundAnimationDisplayChange(id) {
 if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
     window.location.href = "home1.html";
 }
-
-
-//Loopt over de "JsScripts" array en voegt alle nodige javascript links toe aan de pagina
-
-function CreateScripts() {
-    JsScript.forEach((e) => {
-        let scriptTag = document.createElement('script');
-        scriptTag.type = e.type;
-        scriptTag.src = './Js/' + e.src;
-
-        referenceNode = document.querySelector('body');
-
-        referenceNode.appendChild(scriptTag);
-    })
-}
-
-//Alle JS files
-let JsScript = [
-    {
-        "type": "text/javascript",
-        "src": "jquery.zoomooz-zoomTarget.js"
-    },
-    {
-        "type": "text/javascript",
-        "src": "purecssmatrix.js"
-    },
-    {
-        "type": "text/javascript",
-        "src": "jquery.zoomooz-helpers.js"
-    },
-    {
-        "type": "text/javascript",
-        "src": "jquery.zoomooz-anim.js"
-    },
-    {
-        "type": "text/javascript",
-        "src": "jquery.zoomooz-core.js"
-    },
-    {
-        "type": "text/javascript",
-        "src": "sylvester.src.stripped.js"
-    },
-]
 
 
 function terugNaarStart() {
@@ -1232,14 +1189,14 @@ function SpringSeason() {
 
     const anim = function () {
         let x = 0;
-        const speed = Math.random() * 0.7;
+        const speed = Math.random() * 0.5;
         const position = Math.random() * w - w / 2;
         const maxTall = Math.random() * 80;
         const maxSize = Math.random() * 9;
         const c = function (l, u) {
             return Math.round(Math.random() * (u || 255) + l || 0);
         };
-        const color = "rgb(" + c(60, 10) + "," + c(201, 50) + "," + c(120, 50) + ")";
+        const color = "#64B331"; /*"rgb(" + c(60, 10) + "," + c(201, 50) + "," + c(120, 50) + ")";*/
 
         return function () {
             const deviation = Math.cos(x / 30) * Math.min(x / 40, 50),

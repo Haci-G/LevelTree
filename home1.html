@@ -23,15 +23,19 @@
 <body>
     <header id="header">
         <div>
+            <!--"Level Tree by Brightest" linksbovenaan de pagina-->
             <h1 id="header-title" class="title-font">Level Tree</h1>
-
             <p><sup id="by">by</sup>
                 <img id="logo-byBrightest" src="./Assets/Images/by_brightest.png" alt="BrightestLogo">
             </p>
         </div>
+
+        <!--Brightest logo rechtsbovenaan op de pagina-->
         <a href="https://www.brightest.be/">
             <img id="logoBrightest" src="./Assets/Images/brightestIcon.png" alt="logo brightest">
         </a>
+
+        <!--Dit is het "zon" effect dat rond het Brightest logo staat (bij zomerseizoen)-->
         <div id="summer"></div>
 
     </header>
@@ -41,20 +45,19 @@
         <div class="zoomViewport">
 
             <div id="container-boom" class="zoomContainer">
-                <!-- IMAGE BOOM -->
+                <!-- Afbeelding Level Tree -->
                 <img id="tree" src="./Assets/Images/TL1.png" alt="img level tree" />
-
-
-
 
                 <!-- Dit is het punt waar er op ingezoomd is bij het starten van de pagina en hierna rustig uitzoomd -->
                 <div id="zoomStartpunt" class="zoomTarget" data-targetsize="0.02" data-duration="10"></div>
 
-                <!-- Tooltips met alle levels worden hierin aangemaakt via JavaScript-->
-
+                <!-- Tooltips met alle levels worden hierin aangemaakt via JavaScript => functie CreateToolTips()-->
             </div>
 
+            <!--Canvas waar het gras voor het lenteseizoen wordt gegenereerd-->
             <canvas id="spring"></canvas>
+
+            <!--Div waar de herfstblaadjes worden gegenereerd-->
             <div id="autumn">
                 <div class="leaves">
                     <!-- <div class="leaf1 leaf">❄</div>
@@ -91,11 +94,9 @@
                     <div class="leaf11 leaf">🍂</div>
                 </div>
             </div>
-
         </div>
 
-
-
+        <!--Modal dat opgevuld wordt met de juiste gegevens naar gelang de aangeklikte tooltip => functie OpenModel(lvl_Id)-->
         <div class="popup" id="popup">
             <div class="popup-inner">
 
@@ -109,7 +110,7 @@
 
                 <!--Alle inhoud rechterkant modal-->
                 <div class="popup__text">
-                    <h1 id="modal-title">Brightest</h1>
+                    <h1 id="modal-title"></h1>
 
                     <!--subtitle (experience jaren)-->
                     <p id="modal-experience" class="modal-expierence"></p>
@@ -120,23 +121,16 @@
                     </div>
                 </div>
 
-
                 <!-- Video Frame -->
                 <div class="FrameBox">
-
                     <a id="goBackBtn" class="FrameCloseBtn" onclick="SlidInOutBOX()"> x </a>
-
                     <div id="ContentBox">
 
                     </div>
                 </div>
                 <!-- -->
             </div>
-
         </div>
-
-
-
 
         <div class="Seasonswitchs">
             <div class="seasons">
@@ -172,33 +166,19 @@
                 </label>
             </div>
         </div>
-
-
-
-
     </main>
 
-
-
-
     <footer>
-
-
+        <!--Footer wordt gegenereerd door javascript => functie CreateLegendElement()-->
     </footer>
-
-
-
 
 </body>
 
 <!--Link voor de js zoom funcionaliteit-->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-
 <script type="text/javascript" src="./Js/Index1.js"></script>
 <script type="text/javascript" src="./Js/snowstorm.js"></script>
-
-
 
 <!--js files voor zoom functionaliteit-->
 <script type="text/javascript" src="./Js/jquery.zoomooz-helpers.js"></script>
@@ -207,7 +187,4 @@
 <script type="text/javascript" src="./Js/jquery.zoomooz-zoomTarget.js"></script>
 <script type="text/javascript" src="./Js/purecssmatrix.js"></script>
 <script type="text/javascript" src="./Js/sylvester.src.stripped.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script> -->
-<!-- <script src="./Js/new.js" type="text/javascript"></script> -->
-
 </html>

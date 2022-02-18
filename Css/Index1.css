@@ -229,6 +229,7 @@ header {
 #header-title {
   align-self: center;
   margin: 0%;
+  color: #878787;
 }
 
 header p,
@@ -248,6 +249,7 @@ header p,
 #by {
   vertical-align: top;
   font-size: 0.6em;
+  color: #878787;
 }
 /* END */
 
@@ -686,6 +688,7 @@ footer {
   letter-spacing: 5px;
   transform: rotate(-90deg);
   font-weight: bolder;
+  color: #878787;
 }
 
 /* Right side Level info */
