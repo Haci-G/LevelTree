@@ -68,7 +68,7 @@ let seasonArray = [
     switch (season.name) {
         case winter:
             //Snowstorm is een aparte JS file genaamd snowstorm.js
-            snowStorm.start();
+            /*snowStorm.start();*/
             break;
         case herfst:
             BackgroundAnimationDisplayChange(season.name.toLowerCase());
