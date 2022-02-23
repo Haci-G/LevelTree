@@ -53,10 +53,8 @@ function CheckSeizoen() {
     let yyyy = today.getFullYear();
     today = mm + '/' + dd + '/' + yyyy;
 
-/*
-    const d = new Date(today);
-*/
-    const d = new Date("6/24/2022");
+    /*const d = new Date(today);*/
+    const d = new Date("9/24/2022");
 
 let seasonArray = [
         { name: lente, date: new Date(d.getFullYear(), 2, (d.getFullYear() % 4 === 0) ? 19 : 20).getTime() },
@@ -1035,7 +1033,7 @@ const DataLevels = [
     {
         "id": 8,
         "title": "LEVEL 8 GURU",
-        "name": "Czar",
+        "name": "Guru",
         "experience": "> 15 year experience",
         "levelExperience": [
             {
