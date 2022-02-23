@@ -30,6 +30,9 @@ window.addEventListener('load', (event) => {
     document.getElementById("zoomStartpunt").click();
     setTimeout(terugNaarStart, 500);
 
+    /*//Sneeuweffect mag niet automatisch starten
+    snowStorm.stop();*/
+
     //Functie om achtergrond aan te passen naar gelang het seizoen
      CheckSeizoen();
 
@@ -37,8 +40,6 @@ window.addEventListener('load', (event) => {
     if (browserChecker("safari")) {
         document.getElementById('logo-text-modal').style.marginTop = "280%";
     }
-
-    snowStorm.stop();
 });
 
 //Check om te kijken welk seizoen we nu zijn. Achtergrond past zich aan naargelang het seizoen
@@ -56,7 +57,7 @@ function CheckSeizoen() {
     today = mm + '/' + dd + '/' + yyyy;
 
     /*const d = new Date(today);*/
-    const d = new Date("3/24/2022");
+    const d = new Date("1/24/2022");
 
 let seasonArray = [
         { name: lente, date: new Date(d.getFullYear(), 2, (d.getFullYear() % 4 === 0) ? 19 : 20).getTime() },
@@ -79,6 +80,7 @@ let seasonArray = [
             BackgroundAnimationDisplayChange(season.name.toLowerCase());
             break;
         default:
+            document.getElementById("lente").style.display = "block";
             SpringSeason();
             document.getElementById("lentebloem3").style.display = "block";
             document.getElementById("lentebloem4").style.display = "block";
@@ -108,6 +110,9 @@ function terugNaarStart() {
 
     document.getElementById('tree').click();
     document.getElementById("header").style.display = "flex";
+
+    //Functie terug uitvoeren om deze opnieuw zichtbaar te maken na het sluiten van de modal
+    CheckSeizoen();
 
     if (SlidInOutBOX() == true) {
         SlidInOutBOX();
@@ -164,6 +169,8 @@ function CreateLegendElement() {
     document.querySelector('footer').appendChild(legendDiv);
 }
 
+let aantalKeerModalOpen = 0;
+
 /* functie voor de modal (aanmaken, openen en opvullen met de juiste info) */
 function OpenModel(lvl_Id) {
 
@@ -171,6 +178,18 @@ function OpenModel(lvl_Id) {
     // Fetch  request  lvl_Id (Testing)
     // let lvl = await fetch(`http://localhost:5001/Levels?id=${lvl_Id}`).then((response) => response.json()).then((d) => d[0])
     // console.log(lvl);
+if(aantalKeerModalOpen <= 1) {
+    //Bij het openen van de modal alle achtergronden van de seizoenen verbergen
+    document.getElementById("herfst").style.display = "none";
+    document.getElementById("zomer").style.display = "none";
+    document.getElementById("lente").style.display = "none";
+    document.getElementById("lentebloem3").style.display = "none";
+    document.getElementById("lentebloem4").style.display = "none";
+
+    snowStorm.stop();
+}
+aantalKeerModalOpen++;
+
 
     let lvl = DataLevels.find(x => x.id == lvl_Id);
     document.querySelector("header").style.display = "none";
