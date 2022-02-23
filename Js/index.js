@@ -36,6 +36,9 @@ window.addEventListener('load', (event) => {
     /*Fix voor probleem met de uitlijning van Brightest text in de modal bij gebruik van Safari*/
     if (browserChecker("safari")) {
         document.getElementById('logo-text-modal').style.marginTop = "280%";
+        document.getElementsByClassName('item-legende')[0].style.width = "250px";
+        document.getElementsByClassName('item-legende')[1].style.width = "250px";
+        document.getElementsByClassName('item-legende')[2].style.width = "250px";
     }
 
     snowStorm.stop();
@@ -56,7 +59,7 @@ function CheckSeizoen() {
     today = mm + '/' + dd + '/' + yyyy;
 
     /*const d = new Date(today);*/
-    const d = new Date("3/24/2022");
+    const d = new Date("1/24/2022");
 
 let seasonArray = [
         { name: lente, date: new Date(d.getFullYear(), 2, (d.getFullYear() % 4 === 0) ? 19 : 20).getTime() },
