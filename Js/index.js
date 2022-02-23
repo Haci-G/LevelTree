@@ -30,8 +30,8 @@ window.addEventListener('load', (event) => {
     document.getElementById("zoomStartpunt").click();
     setTimeout(terugNaarStart, 500);
 
-    /*//Sneeuweffect mag niet automatisch starten
-    snowStorm.stop();*/
+    //Sneeuweffect mag niet automatisch starten
+    snowStorm.stop();
 
     //Functie om achtergrond aan te passen naar gelang het seizoen
      CheckSeizoen();
@@ -42,6 +42,7 @@ window.addEventListener('load', (event) => {
         document.getElementsByClassName('item-legende')[0].style.width = "250px";
         document.getElementsByClassName('item-legende')[1].style.width = "250px";
         document.getElementsByClassName('item-legende')[2].style.width = "250px";
+        document.querySelector(".item-legende").style.width = "250px";
     }
 });
 
@@ -74,7 +75,12 @@ let seasonArray = [
     switch (season.name) {
         case winter:
             //Snowstorm is een aparte JS file genaamd snowstorm.js
+            snowStorm.show();
+/*
             snowStorm.start();
+*/
+            snowStorm.resume();
+
             break;
         case herfst:
             BackgroundAnimationDisplayChange(season.name.toLowerCase());
@@ -189,6 +195,7 @@ if(aantalKeerModalOpen <= 1) {
     document.getElementById("lentebloem3").style.display = "none";
     document.getElementById("lentebloem4").style.display = "none";
 
+    snowStorm.freeze();
     snowStorm.stop();
 }
 aantalKeerModalOpen++;
