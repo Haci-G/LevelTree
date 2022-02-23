@@ -56,7 +56,7 @@ function CheckSeizoen() {
 /*
     const d = new Date(today);
 */
-    const d = new Date("3/24/2022");
+    const d = new Date("6/24/2022");
 
 let seasonArray = [
         { name: lente, date: new Date(d.getFullYear(), 2, (d.getFullYear() % 4 === 0) ? 19 : 20).getTime() },
@@ -80,6 +80,8 @@ let seasonArray = [
             break;
         default:
             SpringSeason();
+            document.getElementById("lentebloem3").style.display = "block";
+            document.getElementById("lentebloem4").style.display = "block";
     }
     console.log()
 }

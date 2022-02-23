@@ -49,6 +49,23 @@ p {
   z-index: -2;
 }
 
+#lentebloem3{
+  display: none;
+  height: 170px;
+  width: 200px;
+  left: 80%;
+  bottom: 45px;
+  position: absolute
+}
+#lentebloem4{
+  display: none;
+  height: 170px;
+  width: 170px;
+  left: 20%;
+  bottom: 45px;
+  position: absolute
+}
+
 #zomer{
   display: none;
   position: absolute;
