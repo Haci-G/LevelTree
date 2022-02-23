@@ -37,6 +37,8 @@ window.addEventListener('load', (event) => {
     if (browserChecker("safari")) {
         document.getElementById('logo-text-modal').style.marginTop = "280%";
     }
+
+    snowStorm.stop();
 });
 
 //Check om te kijken welk seizoen we nu zijn. Achtergrond past zich aan naargelang het seizoen
@@ -53,7 +55,7 @@ function CheckSeizoen() {
     let yyyy = today.getFullYear();
     today = mm + '/' + dd + '/' + yyyy;
 
-
+    /*const d = new Date(today);*/
     const d = new Date("3/24/2022");
 
 let seasonArray = [
@@ -68,7 +70,7 @@ let seasonArray = [
     switch (season.name) {
         case winter:
             //Snowstorm is een aparte JS file genaamd snowstorm.js
-            /*snowStorm.start();*/
+            snowStorm.start();
             break;
         case herfst:
             BackgroundAnimationDisplayChange(season.name.toLowerCase());
