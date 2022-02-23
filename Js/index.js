@@ -27,11 +27,11 @@ function browserChecker(browserUser) {
 
 //Bij het laden van de pagina wordt er rustig uigezoomd tot de boom volledig zichtbaar is
 window.addEventListener('load', (event) => {
-    /*document.getElementById("zoomStartpunt").click();
-    setTimeout(terugNaarStart, 500);*/
+    document.getElementById("zoomStartpunt").click();
+    setTimeout(terugNaarStart, 500);
 
     //Functie om achtergrond aan te passen naar gelang het seizoen
-    // CheckSeizoen();
+     CheckSeizoen();
 
     /*Fix voor probleem met de uitlijning van Brightest text in de modal bij gebruik van Safari*/
     if (browserChecker("safari")) {
@@ -41,53 +41,64 @@ window.addEventListener('load', (event) => {
 
 //Check om te kijken welk seizoen we nu zijn. Achtergrond past zich aan naargelang het seizoen
 function CheckSeizoen() {
+    const zomer = "zomer";
+    const herfst = "herfst";
+    const winter = "winter";
+    const lente = "lente";
+
+
     let today = new Date();
     let dd = String(today.getDate()).padStart(2, '0');
     let mm = String(today.getMonth() + 1).padStart(2, '0');
     let yyyy = today.getFullYear();
     today = mm + '/' + dd + '/' + yyyy;
 
-    /*onst d = new Date(today);*/
+/*
+    const d = new Date(today);
+*/
     const d = new Date("3/24/2022");
 
-    let seasonArray = [
-        { name: 'lente', date: new Date(d.getFullYear(), 2, (d.getFullYear() % 4 === 0) ? 19 : 20).getTime() },
-        { name: 'zomer', date: new Date(d.getFullYear(), 5, (d.getFullYear() % 4 === 0) ? 20 : 21).getTime() },
-        { name: 'herfst', date: new Date(d.getFullYear(), 8, (d.getFullYear() % 4 === 0) ? 22 : 23).getTime() },
-        { name: 'winter', date: new Date(d.getFullYear(), 11, (d.getFullYear() % 4 === 0) ? 20 : 21).getTime() }
+let seasonArray = [
+        { name: lente, date: new Date(d.getFullYear(), 2, (d.getFullYear() % 4 === 0) ? 19 : 20).getTime() },
+        { name: zomer, date: new Date(d.getFullYear(), 5, (d.getFullYear() % 4 === 0) ? 20 : 21).getTime() },
+        { name: herfst, date: new Date(d.getFullYear(), 8, (d.getFullYear() % 4 === 0) ? 22 : 23).getTime() },
+        { name: winter, date: new Date(d.getFullYear(), 11, (d.getFullYear() % 4 === 0) ? 20 : 21).getTime() }
     ];
 
-    const season = seasonArray.filter(({ date }) => date <= d).slice(-1)[0] || { name: "winter" }
+    const season = seasonArray.filter(({ date }) => date <= d).slice(-1)[0] || { name: winter }
 
     switch (season.name) {
-        case "winter":
+        case winter:
+            //Snowstorm is een aparte JS file genaamd snowstorm.js
+            snowStorm.start();
+            break;
+        case herfst:
             BackgroundAnimationDisplayChange(season.name.toLowerCase());
             break;
-        case "herfst":
-            BackgroundAnimationDisplayChange(season.name.toLowerCase());
-            break;
-        case "zomer":
+        case zomer:
             BackgroundAnimationDisplayChange(season.name.toLowerCase());
             break;
         default:
-            BackgroundAnimationDisplayChange(season.name.toLowerCase());
+            SpringSeason();
     }
     console.log()
 }
 
 // functie om per seizoen de juiste achtergrond animatie te laten zien
 function BackgroundAnimationDisplayChange(id) {
-    let alleItems = document.getElementsByClassName(id);
-    for (let i = 0; i < alleItems.length; i++) {
-        alleItems[i].style.display = 'block';
-    }
+    let gezochteItem = document.getElementById(id);
 
-    document.getElementById(id).style.display = "block";
+    //Alleen bij herfst moet display prop flex zijn
+    if (id === "herfst"){
+        gezochteItem.style.display = "flex";
+        return;
+    }
+    gezochteItem.style.display = "block";
 }
 
 //Check of de pagina herladen wordt, zoja? ga terug naar de homepage. Oplossing voor bug met het laden van info in de modal.
 if (performance.navigation.type === performance.navigation.TYPE_RELOAD) {
-    window.location.href = "home1.html";
+    window.location.href = "index.html";
 }
 
 
@@ -1142,37 +1153,9 @@ const DataLevels = [
 
 CreateToolTips();
 
-
-
-//Season Switch
-function SeasonSwitch(obj) {
-
-
-
-    console.log(obj.checked)
-    //
-    switch (obj.getAttribute("data-season")) {
-        case "Spring":
-            obj.checked == false ? document.getElementById("spring").style.display = "none" : document.getElementById("spring").style.display = "block";
-            break;
-        case "Summer":
-            obj.checked == false ? document.getElementById("summer").style.display = "none" : document.getElementById("summer").style.display = "block";
-            break;
-        case "Winter":
-            obj.checked == false ? (snowStorm.freeze() || snowStorm.stop()) : (snowStorm.resume() || snowStorm.start());
-            break;
-        case "Autumn":
-            obj.checked == false ? document.getElementById("autumn").style.display = "none" : document.getElementById("autumn").style.display = "block";
-            break;
-    }
-}
-
-//Seizoen animatie
-
-SpringSeason()
-
+//Seizoen animatie lente
 function SpringSeason() {
-    const canvas = document.getElementById("spring"),
+    const canvas = document.getElementById("lente"),
         ctx = canvas.getContext("2d"),
         stack = [],
         w = window.innerWidth,

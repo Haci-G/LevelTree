@@ -11,8 +11,7 @@
     <link rel="icon" type="image/png" href="./Assets/Images/brightestIcon.png" />
 
     <!--CSS files-->
-    <link rel="stylesheet" href="./Css/Index1.css">
-    <link rel="stylesheet" href="./Css/switch.css">
+    <link rel="stylesheet" href="Css/index.css">
 
     <!--Nunito (regular 400 google font)-->
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
@@ -36,7 +35,7 @@
         </a>
 
         <!--Dit is het "zon" effect dat rond het Brightest logo staat (bij zomerseizoen)-->
-        <div id="summer"></div>
+        <div id="zomer"></div>
 
     </header>
 
@@ -55,33 +54,13 @@
             </div>
 
             <!--Canvas waar het gras voor het lenteseizoen wordt gegenereerd-->
-            <canvas id="spring"></canvas>
+            <canvas id="lente"></canvas>
+            <img src="Assets/Images/springflower3.png" id="lentebloem3" style="height: 170px; width: 200px; left: 80%; bottom: 45px; position: absolute">
+            <img src="Assets/Images/sunflowerbrightest.png" id="lentebloem4" style="height: 170px; width: 170px; left: 20%; bottom: 45px; position: absolute">
 
             <!--Div waar de herfstblaadjes worden gegenereerd-->
-            <div id="autumn">
+            <div id="herfst">
                 <div class="leaves">
-                    <!-- <div class="leaf1 leaf">❄</div>
-                    <div class="leaf2 leaf">❄</div>
-                    <div class="leaf3 leaf">❄</div>
-                    <div class="leaf4 leaf">❄</div>
-                    <div class="leaf6 leaf">❄</div>
-                    <div class="leaf7 leaf">❄</div>
-                    <div class="leaf8 leaf">❄</div>
-                    <div class="leaf9 leaf">❄</div>
-                    <div class="leaf10 leaf">❄</div>
-                    <div class="leaf11 leaf">❄</div>-->
-
-                  <!--  <div class="leaf1 leaf">🍁</div>
-                   <div class="leaf2 leaf">🍁</div>
-                   <div class="leaf3 leaf">🍁</div>
-                   <div class="leaf4 leaf">🍁</div>
-                   <div class="leaf6 leaf">🍁</div>
-                   <div class="leaf7 leaf">🍁</div>
-                   <div class="leaf8 leaf">🍁</div>
-                   <div class="leaf9 leaf">🍁</div>
-                   <div class="leaf10 leaf">🍁</div>
-                   <div class="leaf11 leaf">🍁</div>-->
-
                     <div class="leaf1 leaf">🍂</div>
                     <div class="leaf2 leaf">🍂</div>
                     <div class="leaf3 leaf">🍂</div>
@@ -132,40 +111,6 @@
             </div>
         </div>
 
-        <div class="Seasonswitchs">
-            <div class="seasons">
-                <p>Summer</p>
-                <label class="switch">
-                    <input type="checkbox" class="checkBtn" data-season="Summer" checked="true"
-                        onclick="SeasonSwitch(this)">
-                    <span class=" slider round"></span>
-                </label>
-            </div>
-            <div class="seasons">
-                <p>Spring</p>
-                <label class="switch">
-                    <input type="checkbox" class="checkBtn" data-season="Spring" checked="true"
-                        onclick="SeasonSwitch(this)">
-                    <span class=" slider round"></span>
-                </label>
-            </div>
-            <div class="seasons">
-                <p>Winter</p>
-                <label class="switch">
-                    <input type="checkbox" class="checkBtn" data-season="Winter" checked="true"
-                        onclick="SeasonSwitch(this)">
-                    <span class="slider round"></span>
-                </label>
-            </div>
-            <div class="seasons">
-                <p>Autumn</p>
-                <label class="switch">
-                    <input type="checkbox" class="checkBtn" data-season="Autumn" checked="true"
-                        onclick="SeasonSwitch(this)">
-                    <span class=" slider round"></span>
-                </label>
-            </div>
-        </div>
     </main>
 
     <footer>
@@ -177,7 +122,7 @@
 <!--Link voor de js zoom funcionaliteit-->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-<script type="text/javascript" src="./Js/Index1.js"></script>
+<script type="text/javascript" src="Js/index.js"></script>
 <script type="text/javascript" src="./Js/snowstorm.js"></script>
 
 <!--js files voor zoom functionaliteit-->
