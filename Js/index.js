@@ -54,7 +54,7 @@ function CheckSeizoen() {
     today = mm + '/' + dd + '/' + yyyy;
 
     /*const d = new Date(today);*/
-    const d = new Date("9/24/2022");
+    const d = new Date("3/24/2022");
 
 let seasonArray = [
         { name: lente, date: new Date(d.getFullYear(), 2, (d.getFullYear() % 4 === 0) ? 19 : 20).getTime() },
