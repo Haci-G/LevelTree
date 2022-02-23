@@ -1157,7 +1157,7 @@ section .thumbnail:hover {
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 700px) {
   #tree {
     justify-content: center;
     margin: auto;
@@ -1252,7 +1252,6 @@ section .thumbnail:hover {
   .testimonialText {
     text-align: left;
   }
-
   #goBackBtn {
     margin-top: 10px;
     margin-left: 10px;
