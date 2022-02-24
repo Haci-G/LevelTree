@@ -53,6 +53,33 @@ p {
   z-index: -2;
 }
 
+.springflowerLarge{
+  position: absolute;
+  height: 95px;
+  width: 40px;
+  bottom: 45px;
+}
+.springflowerSmall{
+  position: absolute;
+  height: 80px;
+  width: 40px;
+  bottom: 45px;
+}
+#springflower1{
+  left: 33%;
+}
+#springflower2{
+  left: 27%;
+}
+#springflower3{
+  left: 30%;
+}
+#springflower4{
+  left: 92%;
+}
+#springflower5{
+  left: 90%;
+}
 #zomer {
   display: none;
   position: absolute;
