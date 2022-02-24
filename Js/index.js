@@ -31,10 +31,10 @@ window.addEventListener('load', (event) => {
     setTimeout(terugNaarStart, 500);
 
     //Sneeuweffect mag niet automatisch starten
-    snowStorm.stop();
+    // snowStorm.stop(); snowStorm.freeze();
 
     //Functie om achtergrond aan te passen naar gelang het seizoen
-     CheckSeizoen();
+    CheckSeizoen();
 
     /*Fix voor probleem met de uitlijning van Brightest text in de modal bij gebruik van Safari*/
     if (browserChecker("safari")) {
@@ -63,7 +63,8 @@ function CheckSeizoen() {
     /*const d = new Date(today);*/
     const d = new Date("3/24/2022");
 
-let seasonArray = [
+
+    let seasonArray = [
         { name: lente, date: new Date(d.getFullYear(), 2, (d.getFullYear() % 4 === 0) ? 19 : 20).getTime() },
         { name: zomer, date: new Date(d.getFullYear(), 5, (d.getFullYear() % 4 === 0) ? 20 : 21).getTime() },
         { name: herfst, date: new Date(d.getFullYear(), 8, (d.getFullYear() % 4 === 0) ? 22 : 23).getTime() },
@@ -75,10 +76,7 @@ let seasonArray = [
     switch (season.name) {
         case winter:
             //Snowstorm is een aparte JS file genaamd snowstorm.js
-            snowStorm.show();
-/*
             snowStorm.start();
-*/
             snowStorm.resume();
 
             break;
@@ -89,10 +87,11 @@ let seasonArray = [
             BackgroundAnimationDisplayChange(season.name.toLowerCase());
             break;
         default:
-            document.getElementById("lente").style.display = "block";
+            //   document.getElementById("lente").style.display = "block";
+            document.querySelector(".springseason").style.display = "block";
             SpringSeason();
-            document.getElementById("lentebloem3").style.display = "block";
-            document.getElementById("lentebloem4").style.display = "block";
+        //   document.getElementById("lentebloem3").style.display = "block";
+        //    document.getElementById("lentebloem4").style.display = "block";
     }
     console.log()
 }
@@ -102,7 +101,7 @@ function BackgroundAnimationDisplayChange(id) {
     let gezochteItem = document.getElementById(id);
 
     //Alleen bij herfst moet display prop flex zijn
-    if (id === "herfst"){
+    if (id === "herfst") {
         gezochteItem.style.display = "flex";
         return;
     }
@@ -178,7 +177,7 @@ function CreateLegendElement() {
     document.querySelector('footer').appendChild(legendDiv);
 }
 
-let aantalKeerModalOpen = 0;
+let aantalKeerModalOpen = 0; // nick info
 
 /* functie voor de modal (aanmaken, openen en opvullen met de juiste info) */
 function OpenModel(lvl_Id) {
@@ -187,18 +186,24 @@ function OpenModel(lvl_Id) {
     // Fetch  request  lvl_Id (Testing)
     // let lvl = await fetch(`http://localhost:5001/Levels?id=${lvl_Id}`).then((response) => response.json()).then((d) => d[0])
     // console.log(lvl);
-if(aantalKeerModalOpen <= 1) {
-    //Bij het openen van de modal alle achtergronden van de seizoenen verbergen
-    document.getElementById("herfst").style.display = "none";
-    document.getElementById("zomer").style.display = "none";
-    document.getElementById("lente").style.display = "none";
-    document.getElementById("lentebloem3").style.display = "none";
-    document.getElementById("lentebloem4").style.display = "none";
 
-    snowStorm.freeze();
-    snowStorm.stop();
-}
-aantalKeerModalOpen++;
+    // nick info ?
+    if (aantalKeerModalOpen > 0) {
+        //Bij het openen van de modal alle achtergronden van de seizoenen verbergen
+        document.getElementById("herfst").style.display = "none";
+        document.getElementById("zomer").style.display = "none";
+        // document.getElementById("lente").style.display = "none";
+        // document.getElementById("lentebloem3").style.display = "none";
+        //  document.getElementById("lentebloem4").style.display = "none";
+        document.querySelector(".springseason").style.display = "none";
+
+
+
+        snowStorm.stop();
+        snowStorm.freeze();
+
+    }
+    aantalKeerModalOpen++;
 
 
     let lvl = DataLevels.find(x => x.id == lvl_Id);
