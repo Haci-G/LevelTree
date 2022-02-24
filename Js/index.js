@@ -61,7 +61,7 @@ function CheckSeizoen() {
     today = mm + '/' + dd + '/' + yyyy;
 
     /*const d = new Date(today);*/
-    const d = new Date("1/24/2022");
+    const d = new Date("3/24/2022");
 
 let seasonArray = [
         { name: lente, date: new Date(d.getFullYear(), 2, (d.getFullYear() % 4 === 0) ? 19 : 20).getTime() },
@@ -1203,7 +1203,7 @@ function SpringSeason() {
 
     const anim = function () {
         let x = 0;
-        const speed = Math.random() * 0.5;
+        const speed = Math.random() * 0.7;
         const position = Math.random() * w - w / 2;
         const maxTall = Math.random() * 80;
         const maxSize = Math.random() * 9;
@@ -1223,7 +1223,6 @@ function SpringSeason() {
             ctx.strokeWidth = 10;
             ctx.translate(w / 2 + position, h);
             ctx.fillStyle = color;
-
             ctx.beginPath();
             ctx.lineTo(-size, 0);
             ctx.quadraticCurveTo(-size, -tall / 2, deviation, -tall);
