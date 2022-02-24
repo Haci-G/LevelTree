@@ -1257,6 +1257,14 @@ section .thumbnail:hover {
   .testimonialText {
     height: 55vh;
   }
+
+  .springseason {
+    position: absolute;
+    bottom: 70px;
+  }
+  #lentebloem4 {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -1279,11 +1287,5 @@ section .thumbnail:hover {
     height: 70%;
   }
 
-  .springseason {
-    position: absolute;
-    bottom: 70px;
-  }
-  #lentebloem4 {
-    display: none;
-  }
+  
 }

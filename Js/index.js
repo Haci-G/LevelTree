@@ -27,8 +27,8 @@ function browserChecker(browserUser) {
 
 //Bij het laden van de pagina wordt er rustig uigezoomd tot de boom volledig zichtbaar is
 window.addEventListener('load', (event) => {
-    document.getElementById("zoomStartpunt").click();
-    setTimeout(terugNaarStart, 500);
+  //  document.getElementById("zoomStartpunt").click();
+  //  setTimeout(terugNaarStart, 500);
 
     //Sneeuweffect mag niet automatisch starten
     // snowStorm.stop(); snowStorm.freeze();
@@ -59,7 +59,7 @@ function CheckSeizoen() {
     let mm = String(today.getMonth() + 1).padStart(2, '0');
     let yyyy = today.getFullYear();
     today = mm + '/' + dd + '/' + yyyy;
-
+    
     /*const d = new Date(today);*/
     const d = new Date("3/24/2022");
 
@@ -188,7 +188,7 @@ function OpenModel(lvl_Id) {
     // console.log(lvl);
 
     // nick info ?
-    if (aantalKeerModalOpen > 0) {
+    if (aantalKeerModalOpen >= 0) {
         //Bij het openen van de modal alle achtergronden van de seizoenen verbergen
         document.getElementById("herfst").style.display = "none";
         document.getElementById("zomer").style.display = "none";
