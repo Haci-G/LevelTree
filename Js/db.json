@@ -1,24 +1,659 @@
 {
-    "Level":[
-        {
-            "id": 1,
-            "name": "Agile test engineer",
-            "Soft Skills":[
-                "Result oriented",
-                "Flexibility",
-                "Teamwork",
-                "Quality focussed",
-                "Professional attitude",
-                "Bright Ambassador"
-            ],
-            "Technical Skills":[
-                "Understanding code",
-                "Test Automation (tooling) basics",
-                "SQL,XML,JSON",
-                "Test Management Tools basics (incl. default management)"],
-            "Test Skills": "",
-            "Qualifications":""
-        }
-    ]
+    "Levels" : [
+    {
+        "id": 1,
+        "title": "LEVEL 1 AGILE TEST ENGINEER",
+        "name": "Agile test engineer",
+        "experience": "< 1 year experience",
+        "levelExperience": [
+            {
+                "SkillName": "Soft Skills",
+                "tester": [
+                    "Result oriented",
+                    "Flexibility",
+                    "Teamwork",
+                    "Quality focussed",
+                    "Professional attitude",
+                    "Bright Ambassador (Like & share Brightest posts, verbal,...)"
+                ]
 
+            },
+            {
+                "SkillName": "Technical Skills",
+                "tester": [
+                    "Understanding code",
+                    "Test Automation (tooling) basics",
+                    "SQL, XML, JSON",
+                    "Test Management Tools basics (incl. defect mngt)"
+                ],
+                "technical": [
+                    "Automation Framework basics",
+                    "Programming skills basics",
+                    "Performance Testing basics"
+                ]
+            },
+            {
+                "SkillName": "Test Skills",
+                "tester": [
+                    "Structured Testing (test Design basics)"
+                ]
+            },
+            {
+                "SkillName": "Qualifications",
+                "tester":
+                    [
+                        "Bachelor of Master degree (or eq. in experience)",
+                        "ISTQB Foundation CTFL certification"
+                    ],
+                "technical": [
+                    "Start with swITch"
+                ]
+            }
+        ],
+        "Testimonials": [
+            {
+                "id": 11,
+                "type": "text",
+                "title": "Nick 's Heeren",
+                "image": "PersonB.jpg",
+                "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            },
+            {
+                "id": 12,
+                "type": "yt",
+                "title": "Shift-left | Test Automation",
+                "videoId": "ElZ_2bb25lA"
+            },
+            {
+                "id": 13,
+                "type": "yt",
+                "title": "Conversations with a software tester",
+                "videoId": "LnRFrIe-1gI"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "LEVEL 2 AGILE TEST ENGINEER",
+        "name": "Agile test engineer",
+        "experience": "> 1 year experience",
+        "levelExperience": [
+            {
+                "SkillName": "Soft Skills",
+                "tester": [
+                    "First Time Right attitude (setting the example, ask for advice & explanations where necessary)",
+                    "Communication skills (verbal & non-verbal)",
+                    "Proactive (think ahead/with your team)"
+
+                ]
+            },
+            {
+                "SkillName": "Technical Skills",
+                "tester": [
+                    "Basic coding & scripting skills",
+                    "API Testing basics"
+                ],
+                "technical": [
+                    "API Test Automation",
+                    "Using Automation Framework/Tools",
+                    "Technology basics: NodeJS, GIT, CI/CD, Rest, PHP MySQL, Java IntelliJ, Microservices, ..."
+                ]
+
+            },
+            {
+                "SkillName": "Test Skills",
+                "tester": [
+                    "Basic test estimation & reporting (for yourself)"
+                ]
+            },
+            {
+                "SkillName": "BTO/C Skills",
+                "tester": [
+                    "Basic Training / Presentation skills"
+                ]
+            },
+            {
+                "SkillName": "Qualifications",
+                "tester": [
+                    "ISTQB Certified Agile Tester",
+                    "BDD Essentials"
+                ],
+                "technical": [
+                    "swITch track finalized"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "LEVEL 3 AGILE TEST AUTOMATION ENGINEER",
+        "name": "Agile test automation engineer",
+        "experience": "> 2 year experience",
+        "levelExperience": [
+            {
+                "SkillName": "Soft Skills",
+                "tester": [
+                    "Ownership",
+                    "Self-development",
+                    "Assertiveness",
+                    "Detect opportunities (at customer)"
+                ],
+                "lead": [
+                    "Lead/coach a small team (1 - 3 people)",
+                    "Basic coaching and coordination skills"
+                ]
+            },
+            {
+                "SkillName": "Technical Skills",
+                "tester": [
+                    "DevOps Basic Concepts (via training =>)",
+                    "Shift-left Basic Concepts (via training =>)",
+                    "Build Domain(s) Expertise (your specialisations / ambitions)"
+                ],
+                "technical": [
+                    "Automation tool specialist",
+                    "Java, Javascript/Typescript of C# knowledge",
+                    "Advanced SQL or noSQL db's",
+                    "Optional specialisation: Performance testing Advanced skills"
+                ]
+            },
+            {
+                "SkillName": "Test Skills",
+                "tester": [
+                    "Able to select \"Test Mngt Tool\" & organise",
+                    "Exploratory Testing (via (self)training) =>)",
+                    "Build Domain Expertise (sector, QA related topics)"
+                ],
+                "lead": [
+                    "Basic project estimates & reporting"
+                ]
+            },
+            {
+                "SkillName": "BTO/C Skills",
+                "tester": [
+                    "Training & Presentation skills"
+                ]
+            },
+            {
+                "SkillName": "Qualifications",
+                "tester": [
+                    "Shift-left concepts (incl. TDD unit testing principles,...)",
+                    "DevOps Basic Concepts",
+                    "Exploratory Testing",
+                    "Train the trainer (IF Brightest Trainer)"
+                ],
+                "lead": [
+                    "Certified Scrum Master",
+                    "Test Management Basics (incl. reporting, estimation,...)"
+                ]
+            }
+        ],
+        "Testimonials": [
+            {
+                "id": 15, 
+                "type": "yt",
+                "title": "Conversations with a software tester",
+                "videoId": "LnRFrIe-1gI"
+            },
+            {
+                "id": 16,
+                "type": "yt",
+                "title": "Stage Bij Brightest",
+                "videoId": "aHI8Wmkny0c"
+            },
+            {
+                "id": 17,
+                "type": "yt",
+                "title": "Shift-left | Test Automation",
+                "videoId": "ElZ_2bb25lA"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "LEVEL 4 AGILE TEST COORDINATOR",
+        "name": "Agile test coordinator",
+        "experience": "> 3 year experience",
+        "levelExperience": [
+            {
+                "SkillName": "Soft Skills",
+                "tester": [
+                    "Networking (sell Brightest to possible candidates & extra solutions for customer)",
+                    "Adaptability (easy integration in new situations/customers)",
+                    "Organisational sensitivity",
+                    "Detect opportunities (outside your own customer)",
+                    "Lead by example",
+                    "Bright Ambassador (Share own content on social media,...)"
+                ],
+                "lead": [
+                    "Lead/coach a few small teams (3 - 5 people)"
+                ]
+            },
+            {
+                "SkillName": "Technical Skills",
+                "tester": [
+                    "Content Coaching (for your specialisations)"
+                ],
+                "technical": [
+                    "Build Automation Framework",
+                    "Advanced programming skills (OOP, design patterns,...)",
+                    "DevOps Advanced (via training =>)"
+                ]
+            },
+            {
+                "SkillName": "Test Skills",
+                "tester": [
+                    "Shift-left skills (able to assess testing pyramid)",
+                    "Content Coaching (sector, QA related topics)"
+                ],
+                "lead": [
+                    "Project estimation & reporting"
+                ]
+            },
+            {
+                "SkillName": "BTO/C Skills",
+                "tester": [
+                    "Construct Trainings (content)",
+                    "Write blogs, papers, articles (content)",
+                    "Knowledge Sharing (gastcollege's, stagebegeleiding, ...)"
+                ]
+            },
+            {
+                "SkillName": "Qualifications",
+                "tester": [
+                    "Scaled Agile Concepts (training mPower)",
+                    "IREB certification"
+                ],
+                "technical": [
+                    "SwITch final assignment (for those who didn't follow swITch)",
+                    "DevOps Advanced training"
+                ],
+                "lead": [
+                    "Prince2 Certified"
+
+                ]
+
+            }
+        ],
+        "Testimonials": [
+            {
+                "id": 18, 
+                "type": "yt",
+                "title": "Partnership PXL | Test Automation Track",
+                "videoId": "jGZF-ChYJ3A"
+            },
+            {
+                "id": 19,
+                "type": "yt",
+                "title": "#BrightChallenge31",
+                "videoId": "w1HdAe9rjig"
+            },
+            {
+                "id": 38,
+                "type": "text",
+                "title": "Haci Guney",
+                "image": "PersonA.jpg",
+                "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            }
+        ]
+
+    },
+    {
+        "id": 5,
+        "title": "LEVEL 5 PRO",
+        "name": "Pro",
+        "experience": "> 4 year experience",
+        "levelExperience": [
+            {
+                "SkillName": "Soft Skills",
+                "tester": [
+                    "Leadership skills (motivation, team vision alignment, ...)",
+                    "Independence (team decisions, organisation,...)",
+                    "Coach teammembers"
+                ],
+
+                "lead": [
+                    "Conflict Management",
+                    "Budgetting",
+                    "Manage/Lead/coach more then 3 teams (of 5 - 10 people) or 1 test project (with possible several teams) (operational level)"
+                ]
+            },
+            {
+                "SkillName": "Technical Skills",
+                "tester": [
+                    "Expert Coach in at least 1 domain (your specialisation)",
+                    "Able to make POC in at least 1 domain (your specialisation)",
+                    "Build Domain(s) Expertise (your specialisations - self development: new trends, ...)",
+                    "Advanced SQL or noSQL db's"
+                ],
+                "technical": [
+                    "Test Automation POC"
+                ],
+                "lead": [
+                    "DevOps Advanced (via training =>)"
+                ]
+            },
+            {
+                "SkillName": "Test Skills",
+                "tester": [
+                    "Expert Coach in at least 1 domain (sector, QA related)",
+                    "Build Domain(s) Expertise (sector, QA related topics - self development: new trends, ...)"
+                ],
+                "lead": [
+                    "Project planning & organisation (budget, resources, approach, ...)",
+                    "Assist in Assessing a QA organisation (assist Brightscan)"
+                ]
+            }
+            ,
+            {
+                "SkillName": "BTO/C Skills",
+                "tester": [
+                    "BPC role (possible to take up)",
+                    "Construct Trainings (all in)",
+                    "Write blogs, papers, articles (all in)",
+                    "Knowledge Sharing (brown bags, webinars, ...)"
+                ]
+            },
+            {
+                "SkillName": "Qualifications",
+                "tester": [
+                    "Acceleration track: leading yourself + Value based selling",
+                    "ISTQB Advanced Certified: Test Analyst"
+                ],
+                "technical": [
+                    "ISTQB Advanced Certified: Technical Test Analyst"
+                ],
+                "lead": [
+                    "DevOps Advanced training"
+                ]
+            }
+        ],
+        "Testimonials": [
+            {
+                "id": 20, 
+                "type": "yt",
+                "title": "Conversations with a software tester",
+                "videoId": "LnRFrIe-1gI"
+            },
+            {
+                "id": 21,
+                "type": "yt",
+                "title": "Partnership PXL | Test Automation Track",
+                "videoId": "jGZF-ChYJ3A"
+            },
+            {
+                "id": 22,
+                "type": "text",
+                "title": "Haci Guney",
+                "image": "PersonA.jpg",
+                "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "title": "LEVEL 6 JEDI",
+        "name": "Jedi",
+        "experience": "> 7 year experience",
+        "levelExperience": [
+            {
+                "SkillName": "Soft Skills",
+                "tester": [
+                    "Market orientation (commerciele ingesteldheid, snappen wat nodig voor de klant & hoe vertalen naar onze solutions / cross selling)",
+                    "Independence (multiple team decisions, organisation,...)",
+                    "Leadership skills (motivation, multiple team vision alignment, ...)",
+                    "Coach teams (dev, analyst, PO, ...)"
+                ],
+                "lead": [
+                    "Manage/Lead/Coach several Test projects (1-5 projects) (operational level)"
+                ]
+            },
+            {
+                "SkillName": "Technical Skills",
+                "technical": [
+                    "Able to select Automation Tool",
+                    "Set up test automation process (CI/CD, testing pyramid, ...) "
+                ]
+            },
+            {
+                "SkillName": "Test Skills",
+                "lead": [
+                    "Set up test process (shift-left, ...)"
+                ]
+            }
+            ,
+            {
+                "SkillName": "BTO/C Skills",
+                "tester": [
+
+                    "Presales",
+                    "Proposal Writing (content delivery)",
+                    "Value Based SPIN Selling (solution sales) (customer & colleagues)",
+                    "Public speaking (domain / expertise on events)",
+                    "Solution Architect (trekken van R&D, groep bijeen krijgen om aan dingen te werken, iets organiseren, lead workforces, ...)",
+                    "Set up Continuous Improvement track (for your teams/small organisations)"
+                ]
+            },
+            {
+                "SkillName": "Qualifications",
+                "tester": [
+                    "Acceleration track: leading others & the company"
+                ],
+                "technical": [
+                    "BDD Practitioner"
+                ],
+                "lead": [
+                    "ISTQB Advanced Certified: Test Manager"
+                ]
+            }
+        ],
+        "Testimonials": [
+            {
+                "id": 23,
+                "type": "yt",
+                "title": "Shift-left | Test Automation",
+                "videoId": "ElZ_2bb25lA"
+            },
+            {
+                "id": 24,
+                "type": "yt",
+                "title": "Conversations with a software tester",
+                "videoId": "LnRFrIe-1gI"
+            },
+            {
+                "id": 25,
+                "type": "text",
+                "title": "Haci Guney",
+                "image": "PersonA.jpg",
+                "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            },
+            {
+                "id": 26,
+                "type": "text",
+                "title": "Nick 's Heeren",
+                "image": "PersonB.jpg",
+                "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "title": "LEVEL 7 CZAR",
+        "name": "Czar",
+        "experience": "> 10 year experience",
+        "levelExperience": [
+            {
+                "SkillName": "Soft Skills",
+                "tester": [
+                    "Organisational Leadership skills (strategic level)",
+                    "Change Management skills (able to solve complex issues & guide organisations to next level)",
+                    "Intrapreneurship",
+                    "Stress resilience",
+                    "Delegation"
+                ],
+                "lead": [
+                    "Manage/Lead/Coach several Test projects (5+ projects) (strategic level)",
+                    "Test Competence Lead"
+                ]
+            },
+            {
+                "SkillName": "Test Skills",
+                "lead": [
+                    "Asses QA organisation (all in Brightscan)"
+                ]
+            },
+            {
+                "SkillName": "BTO/C Skills",
+                "tester": [
+                    "Innovation ideas",
+                    "Proposal Writing (incl. budgets, all in)",
+                    "Key account management",
+                    "Be part of Brightest as a company (lead \"area\")",
+                    "Content review or decide on subjects for (articles, blogs, papers...)",
+                    "Set up & implement Continuous Improvement track (conceptual, organisation wide)"
+                ]
+            },
+            {
+                "SkillName": "Qualifications",
+                "lead": [
+                    "ITIL Foundation"
+                ]
+
+            }
+
+        ],
+        "Testimonials": [
+            {
+                "id": 27,
+                "type": "yt",
+                "title": "Conversations with a software tester",
+                "videoId": "LnRFrIe-1gI"
+            },
+            {
+                "id": 28,
+                "type": "text",
+                "title": "Haci Guney",
+                "image": "PersonA.jpg",
+                "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            }
+        ]
+
+    },
+    {
+        "id": 8,
+        "title": "LEVEL 8 GURU",
+        "name": "Guru",
+        "experience": "> 15 year experience",
+        "levelExperience": [
+            {
+                "SkillName": "Soft Skills",
+                "tester": [
+                    "Negotiation Skills",
+                    "Delivery management (opvolgen van projecten bij klanten, implementatie trajecten, ...)"
+                ],
+                "lead": [
+                    "Lead QA company wide (strategic level)",
+                    "Manage/Lead/Coach several Test projects or Test managers (5+) (strategic level)"
+                ]
+            },
+            {
+                "SkillName": "BTO/C Skills",
+                "tester": [
+                    "Organise external events (content, sector, ...)",
+                    "Tender uitwerken (all in)",
+                    "Business development",
+                    "Create new services/solutions"
+                ]
+            }
+
+
+        ],
+        "Testimonials": [
+            {
+                "id": 29,
+                "type": "yt",
+                "title": "Shift-left | Test Automation",
+                "videoId": "ElZ_2bb25lA"
+            },
+            {
+                "id": 30,
+                "type": "yt",
+                "title": "Conversations with a software tester",
+                "videoId": "LnRFrIe-1gI"
+            },
+            {
+                "id": 31,
+                "type": "text",
+                "title": "Haci Guney",
+                "image": "PersonA.jpg",
+                "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            },
+            {
+                "id": 32,
+                "type": "text",
+                "title": "Nick 's Heeren",
+                "image": "PersonB.jpg",
+                "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            },
+            {
+                "id": 33,
+                "type": "text",
+                "title": "Haci Guney",
+                "image": "PersonA.jpg",
+                "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "title": "LEVEL 9 WZARD",
+        "name": "Wzard",
+        "experience": "> 15 year experience",
+        "levelExperience": [
+            {
+                "SkillName": "Soft Skills",
+                "tester": [
+                    "Drive innovation",
+                    "Inspire people",
+                    "Brightest Ambassador (breathe Brightest)"
+                ]
+            },
+            {
+                "SkillName": "BTO/C Skills",
+                "tester": [
+                    "Public speaking for the top (C-level)",
+                    "Partner material (e.g. area manager (location))"
+                ]
+
+            }
+        ],
+        "Testimonials": [
+            {
+                "id": 34,
+                "type": "yt",
+                "title": "Shift-left | Test Automation",
+                "videoId": "ElZ_2bb25lA"
+            },
+            {
+                "id": 35,
+                "type": "text",
+                "title": "Haci Guney",
+                "image": "PersonA.jpg",
+                "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            },
+            {
+                "id": 36,
+                "type": "yt",
+                "title": "Partnership PXL | Test Automation Track",
+                "videoId": "jGZF-ChYJ3A"
+            },
+            {
+                "id": 37,
+                "type": "yt",
+                "title": "#BrightChallenge31",
+                "videoId": "w1HdAe9rjig"
+            }
+        ]
+    }
+]
 }
