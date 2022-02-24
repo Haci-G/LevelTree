@@ -1204,19 +1204,19 @@ function SpringSeason() {
 
     const anim = function () {
         let x = 0;
-        const speed = Math.random() * 0.4;
+        const speed = Math.random() * 0.2;
         const position = Math.random() * w - w / 2;
-        const maxTall = Math.random() * 80;
-        const maxSize = Math.random() * 9;
+        const maxTall = Math.random() * 40;
+        const maxSize = Math.random() * 5;
         const c = function (l, u) {
             return Math.round(Math.random() * (u || 255) + l || 0);
         };
         const color = "#64B331"; /*"rgb(" + c(60, 10) + "," + c(201, 50) + "," + c(120, 50) + ")";*/
 
         return function () {
-            const deviation = Math.cos(x / 30) * Math.min(x / 40, 50),
-                tall = Math.min(x / 5, maxTall),
-                size = Math.min(x / 50, maxSize);
+            const deviation = Math.cos(x / 30) * Math.min(x / 20, 30),
+                tall = Math.min(x / 4, maxTall),
+                size = Math.min(x / 40, maxSize);
 
             x += speed;
             ctx.save();
