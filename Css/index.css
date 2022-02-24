@@ -53,21 +53,6 @@ p {
   z-index: -2;
 }
 
-#lentebloem3 {
-  height: 170px;
-  width: 200px;
-  left: 80%;
-  bottom: 45px;
-  position: absolute;
-}
-#lentebloem4 {
-  height: 150px;
-  width: 150px;
-  left: 20%;
-  bottom: 48px;
-  position: absolute;
-}
-
 #zomer {
   display: none;
   position: absolute;

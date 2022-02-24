@@ -59,7 +59,7 @@ function CheckSeizoen() {
     let mm = String(today.getMonth() + 1).padStart(2, '0');
     let yyyy = today.getFullYear();
     today = mm + '/' + dd + '/' + yyyy;
-    
+
     /*const d = new Date(today);*/
     const d = new Date("3/24/2022");
 
@@ -78,7 +78,6 @@ function CheckSeizoen() {
             //Snowstorm is een aparte JS file genaamd snowstorm.js
             snowStorm.start();
             snowStorm.resume();
-
             break;
         case herfst:
             BackgroundAnimationDisplayChange(season.name.toLowerCase());
@@ -87,11 +86,8 @@ function CheckSeizoen() {
             BackgroundAnimationDisplayChange(season.name.toLowerCase());
             break;
         default:
-            //   document.getElementById("lente").style.display = "block";
             document.querySelector(".springseason").style.display = "block";
             SpringSeason();
-        //   document.getElementById("lentebloem3").style.display = "block";
-        //    document.getElementById("lentebloem4").style.display = "block";
     }
     console.log()
 }
@@ -1208,7 +1204,7 @@ function SpringSeason() {
 
     const anim = function () {
         let x = 0;
-        const speed = Math.random() * 0.7;
+        const speed = Math.random() * 0.4;
         const position = Math.random() * w - w / 2;
         const maxTall = Math.random() * 80;
         const maxSize = Math.random() * 9;
