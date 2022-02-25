@@ -60,8 +60,10 @@ function CheckSeizoen() {
     let yyyy = today.getFullYear();
     today = mm + '/' + dd + '/' + yyyy;
 
-    /*const d = new Date(today);*/
-    const d = new Date("3/24/2022");
+    const d = new Date(today);
+/*
+    const d = new Date("6/24/2022");
+*/
 
 
     let seasonArray = [
