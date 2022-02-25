@@ -837,7 +837,7 @@ const DataLevels = [
                 "lead": [
                     "Conflict Management",
                     "Budgetting",
-                    "Manage/Lead/coach more then 3 teams (of 5 - 10 people) or 1 test project (with possible several teams) (operational level)"
+                    "Manage/Lead/coach more then 3 teams (5 - 10 people) or 1 test project (with possible several teams) (operational level)"
                 ]
             },
             {
