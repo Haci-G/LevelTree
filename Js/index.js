@@ -175,8 +175,7 @@ function CreateLegendElement() {
     document.querySelector('footer').appendChild(legendDiv);
 }
 
-let aantalKeerModalOpen = 0; // nick info
-
+/*let aantalKeerModalOpen = 0;*/
 /* functie voor de modal (aanmaken, openen en opvullen met de juiste info) */
 function OpenModel(lvl_Id) {
 
@@ -185,23 +184,17 @@ function OpenModel(lvl_Id) {
     // let lvl = await fetch(`http://localhost:5001/Levels?id=${lvl_Id}`).then((response) => response.json()).then((d) => d[0])
     // console.log(lvl);
 
-    // nick info ?
-    if (aantalKeerModalOpen >= 0) {
+/*    //Fix voor seizoen probleem bij het laden van de pagina, eerste keer
+    if (aantalKeerModalOpen >= 0) {*/
         //Bij het openen van de modal alle achtergronden van de seizoenen verbergen
         document.getElementById("herfst").style.display = "none";
         document.getElementById("zomer").style.display = "none";
-        // document.getElementById("lente").style.display = "none";
-        // document.getElementById("lentebloem3").style.display = "none";
-        //  document.getElementById("lentebloem4").style.display = "none";
         document.querySelector(".springseason").style.display = "none";
-
-
 
         snowStorm.stop();
         snowStorm.freeze();
-
-    }
-    aantalKeerModalOpen++;
+/*    }
+    aantalKeerModalOpen++;*/
 
 
     let lvl = DataLevels.find(x => x.id == lvl_Id);
