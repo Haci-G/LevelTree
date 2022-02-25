@@ -355,11 +355,11 @@ function SliderEffect(buttonON = false) {
         let buttonLeft = document.getElementById('slide-left');
 
         buttonLeft.addEventListener('click', function () {
-            slider.scrollLeft -= -75;
+           slider.scrollLeft = slider.scrollLeft - 55;
         })
 
         buttonRight.addEventListener('click', function () {
-            slider.scrollLeft += 75;
+            slider.scrollLeft += 55;
         })
     }
 
@@ -672,7 +672,7 @@ const DataLevels = [
                 ],
                 "technical": [
                     "Automation tool specialist",
-                    "Java, Javascript/Typescript of C# knowledge",
+                    "Java, Javascript/Typescript or C# knowledge",
                     "Advanced SQL or noSQL db's",
                     "Optional specialisation: Performance testing Advanced skills"
                 ]
