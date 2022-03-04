@@ -556,23 +556,85 @@ const DataLevels = [
         ],
         "Testimonials": [
             {
-                "id": 11,
-                "type": "text",
-                "title": "Nick 's Heeren",
-                "image": "PersonB.jpg",
-                "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-            },
-            {
-                "id": 12,
-                "type": "yt",
-                "title": "Shift-left | Test Automation",
-                "videoId": "ElZ_2bb25lA"
-            },
-            {
-                "id": 13,
+                "id": 101,
                 "type": "yt",
                 "title": "Meet Hannelore - Brightest SwITch",
                 "videoId": "sjrPJzeONhs"
+            },
+            {
+                "id": 102,
+                "type": "yt",
+                "title": "Conversations with a software tester | Part 1",
+                "videoId": "LnRFrIe-1gI"
+            },
+            {
+                "id": 103,
+                "type": "yt",
+                "title": "Conversations with a software tester | Part 2",
+                "videoId": "Glhj0cvNVMk"
+            },
+            {
+                "id": 104,
+                "type": "yt",
+                "title": "Conversations with a software tester | Part 3",
+                "videoId": "kmWCeRC9oNg"
+            },
+            {
+                "id": 105,
+                "type": "text",
+                "title": "Michael",
+                "image": "michael.jfif",
+                "text": " In september startte ik als software quality engineer bij Brightest East. Ik werd meteen goed opgevolgd. Vaak voelen mensen zich een “nummer” in een bedrijf, maar bij Brightest is dat absoluut niet het geval. Hier wordt bijvoorbeeld echt iets gedaan met de feedback die ze ons vragen.\n" +
+                    "Brightest in drie woorden: feest, collega’s en kwaliteit. Brightest kent een sterke groei, er wordt hard ingezet op het versterken van de band tussen (nieuwe) collega’s. Alle collega’s zijn super behulpzaam. Je hoeft maar een mail of bericht te sturen om hulp te krijgen. En die kwaliteit, da’s iets waar zowel Brightest als ik heel hard naar streven.\n" +
+                    "\n" +
+                    "Wat vind ik zo boeiend aan software quality? Het kritisch denken. De logica achter een keuze in het ontwikkelingsproces te weten komen en mee helpen zoeken naar een oplossing.\n" +
+                    "\n" +
+                    "De belangrijkste dingen in mijn leven zijn mijn familie en vrienden. Wat ook heel belangrijk is voor mij: streven naar telkens een betere versie van mezelf worden, zowel op persoonlijk als professioneel vlak. Verder ga ik graag sporten en lees ik wel eens een boek. Mijn interesses veranderen wel voortdurend: het ene moment ga ik graag kickboksen en lees ik boeken van Stephen Hawking, het andere moment ben ik meer geboeid door fitness en Griekse mythologie. De enige constante is dat ik een fervent supporter ben van Arsenal FC 😊\n" +
+                    "Wat me nog typeert: droge humor en parate kennis (mijn vriendin denkt dat ik Google ben). Mij mag je altijd wakker maken voor een leuke citytrip! Liefst niet te vroeg, want ik ben geen ochtendmens 😄"
+            },
+            {
+                "id": 106,
+                "type": "text",
+                "title": "Robby",
+                "image": "robby.jfif",
+                "text": "Enkele weken geleden startte ik bij Brightest East. Wat me het meest is bijgebleven aan mijn start is de familiale sfeer en een heel warm welkom. Ook de hulp van iedereen. Heb je een vraag over je opstart of ben je er niet zeker van hoe bepaalde zaken in elkaar zitten, één mail volstaat. Je krijgt snel antwoord. Alle neuzen binnen het bedrijf staan ook in dezelfde richting. Werk je nu op HQ, in East of West: iedereen zal je dezelfde antwoorden geven en met hetzelfde gevoel over Brightest spreken.\n" +
+                    "\n" +
+                    "Brightest in drie woorden: familiaal, warm en professioneel. Je bent geen nummer; je maakt deel uit van een team. Dit vind ik echt top; zeker in een bedrijf waar iedereen als consultant werkt bij externe klanten; om dan toch dergelijk hecht team te hebben vind ik een mooie prestatie. Bij Brightest is ook alles altijd op en top professioneel. Gaande van het materiaal dat je dient te krijgen, tot de opleidingen die iedereen kan volgen, van etentjes tot business meetings, ... het is altijd top.\n" +
+                    "\n" +
+                    "Het meest interessante aan software quality vind ik de veelzijdigheid van de job waarin je een brede visie moet behouden. Je moet communicatief sterk zijn en een soort van helikopterview behouden om alle stukjes van het verhaal mooi samen te laten vallen. Deel uit kunnen maken van het gehele proces van een product of dienst waarbinnen je een bepaalde verantwoordelijkheid krijgt om ervoor te zorgen dat het product zo kwalitatief mogelijk is.\n" +
+                    "\n" +
+                    "Mijn gezin is het belangrijkste in mijn leven. Ik ben getrouwd en heb één zoon. Zij betekenen alles voor mij. Mijn vrije tijd gaat dus ook vooral naar hen, van fijne uitstapjes tot kamperen en vakanties. Als ik nog tijd over heb, ben ik in mijn vrije tijd vooral bezig met gamen, Muay Thai om mijn fysiek wat bij te houden of een fijne wandeltocht om volledig tot rust te komen.\n" +
+                    "Wat mij typeert: ik ben een sociaal persoon die houdt van interactie. Iemand die eerlijk en vriendelijk is en open staat voor nieuwe zaken, iemand die altijd op zoek is naar een uitdaging om te blijven bijleren.\n" +
+                    "Mij mag je altijd wakker maken voor een etentje 😊 Of een saunabezoekje om volledig te ontspannen!"
+            },
+            {
+                "id": 107,
+                "type": "text",
+                "title": "Bjorn",
+                "image": "bjorn.jfif",
+                "text": "Ik vind software quality interessant omdat je er mee voor kan zorgen dat een software applicatie de best mogelijke kwaliteit krijgt. Daarnaast ben je bij verschillende facetten in het hele process betrokken en dat maakt het allemaal heel boeiend voor mij.\n" +
+                    "\n" +
+                    "Zelf ben ik nog maar recent in het SwITch traject van Brightest gestart maar ik heb al snel ontdekt dat alle collega’s heel toegankelijk zijn en dat je met iedereen, van junior tot senior, de meest boeiende gesprekken kan hebben. Ook de algemene begeleiding en de hulp van in het begin zijn enorm groot. Brightest in drie woorden:\n" +
+                    "\n" +
+                    "1/ Gepassioneerd. Elke persoon die je ontmoet binnen Brightest heeft een enorme drive om er voor te gaan.\n" +
+                    "2/ Expertise. Je kan met al je vragen steeds terecht bij de juiste persoon. Je hebt als het ware een trein van kennis achter je.\n" +
+                    "3/ Smiles. Alle collega’s zijn goedlachs en ontzettend sympathiek.\n" +
+                    "\n" +
+                    "Wat me typeert als persoon is dat ik steeds erg geboeid ben door nieuwe technologieën, tot grote spijt van mijn portemonnee 😊.\n" +
+                    "Daarnaast zien andere mensen mij als iemand die graag helpt en altijd klaar staat voor hen. Naast mijn job ben ik ook geboeid door wat ik het best zou kunnen omschrijven als: ‘creatief bezig zijn’. Mijn drone is daar een voorbeeld van. Fotografie blijft ook een grote hobby. En ja, af en toe een game op de pc kan zeker ook geen kwaad.\n" +
+                    "\n" +
+                    "Ja, plezier maken is voor mij ontzettend belangrijk in het leven, alles is een reden om de slingers op te hangen. Als afsluiter, voor de volgende zaken mag je me altijd wakker maken: koffiekoeken in een airbnb met een zicht om U tegen te zeggen. Een roadtrip naar de middle of nowhere. Een rit in iets op vier wielen dat zeer snel van A naar B kan."
+                 },
+            {
+                "id": 108,
+                "type": "text",
+                "title": "Pieter",
+                "image": "pieter.jfif",
+                "text": "Wat mij typeert is mijn creativiteit en out-of-the-box mindset aangevuld met een flinke portie sociale skills. Het zal dus ook niet verbazen dat ik voor een job als software quality consultant kies.\n" +
+                    "\n" +
+                    "In deze rol krijg je te maken met alle facetten van een software-project en daarbij is het leggen van contacten met zowel analisten, programmeurs, business, klanten, … essentieel. Al deze partijen tevreden te houden is nog een ander staaltje vakmanschap en daar komt mijn creativiteit en toegankelijkheid zeker van pas, gelukkig hou ik ook van een gezonde dosis uitdaging. 😉\n" +
+                    "\n" +
+                    "Toegankelijkheid is niet alleen mijn middle name maar is zeker ook één van de sterktes van Brightest. Mensen werken voor mensen, en dat hebben ze hier goed begrepen. Mijn start kan omschreven worden als een leerrijk feest. Zo mocht ik meteen aan een interessante opleiding starten, gingen we royaal op restaurant en ontdekte ik wat een “teammeeting” betekent in Brightest normen. Dat valt niet meer te vergeten! 🥳 Intern heerst er een informele sfeer waardoor je je meteen op je gemak voelt. Verder vind ik het fantastisch om te zien hoe dat gecombineerd wordt met het professionele aspect van het runnen van een bedrijf. Dat is een combi die je in realiteit toch niet heel vaak tegen komt en waar ze hier wel in slagen!"
             },
         ]
     },
@@ -696,22 +758,17 @@ const DataLevels = [
         ],
         "Testimonials": [
             {
-                "id": 15, // needs to be UNIEK
-                "type": "yt",
-                "title": "Conversations with a software tester",
-                "videoId": "LnRFrIe-1gI"
-            },
-            {
-                "id": 16,
-                "type": "yt",
-                "title": "Stage Bij Brightest",
-                "videoId": "aHI8Wmkny0c"
-            },
-            {
-                "id": 17,
-                "type": "yt",
-                "title": "Shift-left | Test Automation",
-                "videoId": "ElZ_2bb25lA"
+                "id": 301,
+                "type": "text",
+                "title": "Edse",
+                "image": "edse.jfif",
+                "text": "Van m’n start bij Brightest onthou ik vooral het warme onthaal zowel in Genk als in Kontich, en de persoonlijke aanpak. Ik voelde me onmiddellijk welkom en thuis. Naast die persoonlijke aanpak staat bij Brightest kwaliteit voorop. Kwaliteit is natuurlijk belangrijk in onze job als software tester, maar Brightest gaat nog een stap verder. Brightest zorgt er voor dat alle collega’s kwaliteit kunnen leveren door voldoende opleidingsmogelijkheden aan te bieden. Wat ook heel typerend is, is de open sfeer en open communicatie.\n" +
+                    "\n" +
+                    "Als software quality engineer haal ik vooral voldoening uit de verantwoordelijkheid die je hebt om bij te dragen aan de kwaliteit van een applicatie. Je bent betrokken in het hele software development proces. Verder spreken me vooral de diversiteit aan taken en het sociale karakter van de rol aan.\n" +
+                    "\n" +
+                    "M’n collega’s hebben me intussen leren kennen als iemand die heel nieuwsgierig is, altijd open staat voor nieuwe dingen, graag mensen rond zich heeft, en altijd het positieve probeert te zien in dingen en mensen. De belangrijkste dingen in m’n leven zijn mijn dochtertje, familie, vriendinnen en een goede gezondheid (voor al deze mensen). Naast m’n job ben ik ook geboeid door dansen. Als ik nog tijd heb 😉 #momlife\n" +
+                    "\n" +
+                    "Je mag mij altijd wakker maken voor ijs of een leuk feestje, en dit liefst op een zonnige bestemming."
             },
         ]
     },
@@ -784,23 +841,19 @@ const DataLevels = [
         ],
         "Testimonials": [
             {
-                "id": 18, // needs to be UNIEK
-                "type": "yt",
-                "title": "Partnership PXL | Test Automation Track",
-                "videoId": "jGZF-ChYJ3A"
-            },
-            {
-                "id": 19,
-                "type": "yt",
-                "title": "#BrightChallenge31",
-                "videoId": "w1HdAe9rjig"
-            },
-            {
-                "id": 38,
+                "id": 401,
                 "type": "text",
-                "title": "Haci Guney",
-                "image": "PersonA.jpg",
-                "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                "title": "Gertjan",
+                "image": "gertjan.jfif",
+                "text": "Waarom boeit software quality me? Kwaliteit zit in meerdere aspecten: zowel het functionele (jezelf in de schoenen van de gebruiker plaatsen) als het non-functionele (achter het gordijn kijken en weten wat daar gebeurt). Zo kom je tot een kwalitatief geheel.\n" +
+                    "\n" +
+                    "Toen ik startte bij Brightest, stond iedereen voor me klaar. Ik reed naar huis met het gevoel “voor hen kiezen, was de juiste keuze”. Brightest in drie woorden:\n" +
+                    "1/ Bright. Google geeft twee betekenissen: “giving out or reflecting much light, shining” en “intelligent and quick-witted”. Beide zijn van toepassing. De mensen zijn goedlachs, staan voor je klaar en zien er ook echt gelukkig uit. Daarnaast zijn ze experten in het vak. Je krijgt de vrijheid om je in jouw interessegebied te ontwikkelen. Je bent omringd door mensen die jou naar een volgend niveau brengen.\n" +
+                    "2/ Test. We zijn een testing company, en hier kan je alles leren. Ik kan me uitleven in test automation, performance testing, QA monitoring, functional testing,...\n" +
+                    "Maar ze kijken ook verder. Hoe zit het met het security inzicht van de consultants? Hoe kunnen we hen hierin sterker maken? Etc.\n" +
+                    "3/ Caring. De hoeveelheid collega's die me de vraag stelt hoe het gaat: bij de start, op mijn project, met certificering,... is hier echt hoog. Je merkt dat je in een bedrijf zit waar mensen willen weten hoe het met de andere mensen gaat. Zodat ze betere consultants worden enerzijds, maar vooral zodat ze zich goed voelen anderzijds. The care level is strong in this one.\n" +
+                    "\n" +
+                    "De belangrijkste dingen in mijn leven zijn mijn gezin, mijn vrienden, en mijn sport (fitness). Voor een stevige ochtend workout mag je me altijd wakker maken! Daarnaast ben ik ook geboeid door Cyber Security. Wat mij typeert: ik ben diegene die met de 'wist-je-datjes' komt aanzetten in gesprekken. De zaken die anderen niet opvallen, zijn vaak dingen waar ik toch even bij stilsta. Ook ben ik iemand die vaak over veel verschillende zaken iets wil te weten komen. Ik zou mezelf dus eerder een generalist noemen. Iets wat als tester goed van pas komt!"
             },
         ]
 
@@ -878,23 +931,16 @@ const DataLevels = [
         ],
         "Testimonials": [
             {
-                "id": 20, // needs to be UNIEK
-                "type": "yt",
-                "title": "Conversations with a software tester",
-                "videoId": "LnRFrIe-1gI"
-            },
-            {
-                "id": 21,
-                "type": "yt",
-                "title": "Partnership PXL | Test Automation Track",
-                "videoId": "jGZF-ChYJ3A"
-            },
-            {
-                "id": 22,
+                "id": 501,
                 "type": "text",
-                "title": "Haci Guney",
-                "image": "PersonA.jpg",
-                "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                "title": "Tom",
+                "image": "tom.jfif",
+                "text": "Ik ben onlangs gestart bij Brightest West. Ik voelde me meteen betrokken bij het hele bedrijf. Ook al ben ik voornamelijk op het kantoor in Gent, ik werd al snel voorgesteld aan meerdere mensen binnen het bedrijf, ook de collega’s van Brightest HQ en Brightest East. Zo krijg je snel een eerste indruk van wie wie is. Iedereen is heel aanspreekbaar. Je voelt je een deel van de Brightest familie, door de persoonlijke opvolging en regelmatige check-ins van o.a. de office managers. Wat ook heel kenmerkend is: de gedrevenheid van iedereen. Dat is echt onderdeel van de bedrijfscultuur.\n" +
+                    "\n" +
+                    "Waarom werk ik zo graag als software quality consultant? Het verbeteren van applicaties bij klanten, daar krijg ik energie van. Er zijn verschillende manieren om functionaliteiten af te dekken en dat maakt de job heel boeiend.\n" +
+                    "\n" +
+                    "De belangrijkste dingen in mijn leven zijn mijn kindjes, familie, en vrienden. Daarnaast ben ik ook geboeid door fotografie, muziek, en sport (lopen en fietsen). Wat mij verder typeert? Flauwe grappen! Als je ze nog niet hebt gehoord, dan volgen ze zeker nog 😉\n" +
+                    "Mij mag je altijd wakker maken voor een goed feestje! En daar kennen ze wat van hier bij Brightest 🥳️"
             },
         ]
     },
