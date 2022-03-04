@@ -27,8 +27,8 @@ function browserChecker(browserUser) {
 
 //Bij het laden van de pagina wordt er rustig uigezoomd tot de boom volledig zichtbaar is
 window.addEventListener('load', (event) => {
-  //  document.getElementById("zoomStartpunt").click();
-  //  setTimeout(terugNaarStart, 500);
+    //  document.getElementById("zoomStartpunt").click();
+    //  setTimeout(terugNaarStart, 500);
 
     //Sneeuweffect mag niet automatisch starten
     // snowStorm.stop(); snowStorm.freeze();
@@ -181,13 +181,13 @@ function OpenModel(lvl_Id) {
     // let lvl = await fetch(`http://localhost:5001/Levels?id=${lvl_Id}`).then((response) => response.json()).then((d) => d[0])
     // console.log(lvl);
 
-        //Bij het openen van de modal alle achtergronden van de seizoenen verbergen
-        document.getElementById("herfst").style.display = "none";
-        document.getElementById("zomer").style.display = "none";
-        document.querySelector(".springseason").style.display = "none";
+    //Bij het openen van de modal alle achtergronden van de seizoenen verbergen
+    document.getElementById("herfst").style.display = "none";
+    document.getElementById("zomer").style.display = "none";
+    document.querySelector(".springseason").style.display = "none";
 
-        snowStorm.stop();
-        snowStorm.freeze();
+    snowStorm.stop();
+    snowStorm.freeze();
 
 
     let lvl = DataLevels.find(x => x.id == lvl_Id);
@@ -341,7 +341,7 @@ function SliderEffect(buttonON = false) {
         let buttonLeft = document.getElementById('slide-left');
 
         buttonLeft.addEventListener('click', function () {
-           slider.scrollLeft = slider.scrollLeft - 55;
+            slider.scrollLeft = slider.scrollLeft - 55;
         })
 
         buttonRight.addEventListener('click', function () {
@@ -518,8 +518,7 @@ const DataLevels = [
                     "Quality focussed",
                     "Professional attitude",
                     "Bright Ambassador (Like & share Brightest posts, verbal,...)"
-                ],
-
+                ]
             },
             {
                 "SkillName": "Technical Skills",
@@ -534,7 +533,7 @@ const DataLevels = [
                     "Automation Framework basics",
                     "Programming skills basics",
                     "Performance Testing basics"
-                ],
+                ]
             },
             {
                 "SkillName": "Test Skills",
@@ -551,7 +550,7 @@ const DataLevels = [
                     ],
                 "technical": [
                     "Start with swITch"
-                ],
+                ]
             },
         ],
         "Testimonials": [
@@ -624,7 +623,7 @@ const DataLevels = [
                     "Daarnaast zien andere mensen mij als iemand die graag helpt en altijd klaar staat voor hen. Naast mijn job ben ik ook geboeid door wat ik het best zou kunnen omschrijven als: ‘creatief bezig zijn’. Mijn drone is daar een voorbeeld van. Fotografie blijft ook een grote hobby. En ja, af en toe een game op de pc kan zeker ook geen kwaad.\n" +
                     "\n" +
                     "Ja, plezier maken is voor mij ontzettend belangrijk in het leven, alles is een reden om de slingers op te hangen. Als afsluiter, voor de volgende zaken mag je me altijd wakker maken: koffiekoeken in een airbnb met een zicht om U tegen te zeggen. Een roadtrip naar de middle of nowhere. Een rit in iets op vier wielen dat zeer snel van A naar B kan."
-                 },
+            },
             {
                 "id": 108,
                 "type": "text",
@@ -636,6 +635,65 @@ const DataLevels = [
                     "\n" +
                     "Toegankelijkheid is niet alleen mijn middle name maar is zeker ook één van de sterktes van Brightest. Mensen werken voor mensen, en dat hebben ze hier goed begrepen. Mijn start kan omschreven worden als een leerrijk feest. Zo mocht ik meteen aan een interessante opleiding starten, gingen we royaal op restaurant en ontdekte ik wat een “teammeeting” betekent in Brightest normen. Dat valt niet meer te vergeten! 🥳 Intern heerst er een informele sfeer waardoor je je meteen op je gemak voelt. Verder vind ik het fantastisch om te zien hoe dat gecombineerd wordt met het professionele aspect van het runnen van een bedrijf. Dat is een combi die je in realiteit toch niet heel vaak tegen komt en waar ze hier wel in slagen!"
             },
+            {
+                "id": 109,
+                "type": "text",
+                "title": "Ali",
+                "image": "Ali.jfif",
+                "text": "Enkele weken geleden startte ik bij Brightest East (Genk) als software quality consultant. Het viel meteen op dat Brightest een warme omgeving is; iedereen is super vriendelijk en behulpzaam." +
+                    "\nBrightest in drie woorden: 1 Verbondenheid. \nIk voel me aanvaard en gewaardeerd, en daardoor voelde ik me meteen heel verbonden." +
+                    "\nIedereen deelt ideeën met elkaar, er is een heel goede samenwerking. \n2 Energie. Er is een dynamische cultuur met veel sociale events.\n3 Stimulerend. De vele levendige conversaties, er is zoveel te leren,..." +
+                    "\nIk verwacht bij Brightest te groeien en zo ook bij te dragen aan de groei van het team. Wat ik zo boeiend vind aan software quality: je bekijkt een product vanuit meerdere invalshoeken. \n Je test uitvoerig vanuit verschillende mogelijke scenario’s, en van daaruit doe je suggesties voor optimalisaties. Je draagt bij aan de kwaliteit en de waarde van het product, en dat geeft veel voldoening. De belangrijkste dingen in mijn leven zijn: een doel hebben, doen wat je écht wilt doen, gezondheid, humor, en natuurlijk familie, vrienden en muziek! Ik heb meerdere instrumenten en speel vooral gitaar en drum, maar ik heb ook meer etnische instrumenten zoals Kalimba of xylofoon. Ik experimenteer graag met verschillende instrumenten.Wat me verder typeert: ik ben empathisch, dankbaar voor alles in het leven, hecht veel waarde aan persoonlijke ontwikkeling. Ik maak graag mooie herinneringen, maar tegelijk vind ik het belangrijk om te leren van moeilijkere momenten.Je mag me altijd wakker maken voor een backpack trip. Cuba zou fijn zijn 😉"
+            },
+            {
+
+                "id": 110,
+                "type": "text",
+                "title": "Ian",
+                "image": "Ian.jfif",
+                "text": "Ik startte enkele weken geleden bij Brightest East (Genk) in het SwITch traject. Wat me het meest bijblijft aan mijn start is de goede begeleiding en opleiding, en dat iedereen heel vriendelijk is. Al bij de ondertekening van mijn contract voelde ik me welkom in de groep. Zo mocht ik al deelnemen aan een event, nog voor ik begonnen was." +
+                    "\nIedereen is heel betrokken, zo sturen ze bijvoorbeeld een berichtje om te vragen hoe de eerste dag is gegaan, succes te wensen, of proficiat als je het ISTQB examen hebt gehaald." +
+                    "\nHet meest interessante aan software quality vind ik dat je een impact kan hebben op software, zonder dat mensen het door hebben. Je zorgt dat de software beter werkt waardoor de gebruiker geen problemen ondervindt. Er is niets zo irritant als software die crasht als je het nodig hebt of gewoon niet werkt wanneer je je even wilt ontspannen." +
+                    "\n" +
+                    "\nBrightest in drie woorden:" +
+                    "\n1| Caring. Je wordt als mens behandeld, niet als een nummer. Dit zit in kleine dingen (zoals de “succes” en “proficiat” berichtjes) maar ook in grotere, zoals de hulp rond mentale en fysieke gezondheid, de opleidingen, groeitraject,..." +
+                    "\n2| Team. Voor een bedrijf waar iedereen bij een externe klant werkt, is het echt een hecht team. Iedereen kent elkaar en helpt elkaar wanneer nodig." +
+                    "\n3| Groei. Brightest geeft je de mogelijkheid om je skills te laten groeien. Dit is in het SwITch traject centraal, maar ook daarbuiten zijn er veel opleidingen die je kan volgen om nieuwe tools en skills te leren." +
+                    "\nVoor mij zijn de belangrijkste dingen in het leven mijn katten (Nio en Noortje) en mijn moeder die me altijd heeft geholpen en klaar stond voor me. Games zijn ook belangrijk voor mij; zonder games kon het goed zijn dat ik nooit had gedacht om in de IT wereld te gaan! Ik ben heel geboeid door de technologie erachter: hoe computers deze software kunnen runnen zonder problemen en ook mensen connecteren over de hele wereld met bijna geen delay." +
+                    "\n" +
+                    "\nWat me verder typeert: ik wil altijd nieuwe dingen leren en nieuwe technologie gebruiken. Iets nieuw zoals virtual reality of de 'metaverse' interesseren me heel erg. Innovatie is fascinerend!" +
+                    "\n" +
+                    "\nJe mag mij altijd wakker maken voor: frietjes 😊"
+            },
+            {
+                "id": 111,
+                "type": "text",
+                "title": "Robbert",
+                "image": "Robbert.jfif",
+                "text": "Eind december startte ik als software quality consultant bij Brightest East (Genk). Ik voelde me meteen welkom, al van de dag dat ik mijn contract ging ondertekenen. Het zat in kleine gebaren. Ook werd ik de dag voor mijn officiële start thuis opgehaald door mijn Bright People Coach. Die bracht me naar het hoofdkantoor in Kontich, waar ik mijn wagen kon ophalen. Die rit naar Kontich geeft je meteen ook de kans om elkaar beter te leren kennen. Ook alle “succes” berichten en het telefoontje om te vragen hoe de eerste dag was verlopen, waren heel fijn." +
+                    "\nBrightest in drie woorden:" +
+                    "\n✅ Persoonlijk. Bij de sollicitatie wordt er vooral gekeken naar de persoon achter het CV. Hoe je social skills tot hun recht komen en hoe je bent in de omgang." +
+                    "\n✅ Groei. Brightest geeft veel kansen om te blijven groeien. Zo zijn er tal van opleidingen die je kan volgen." +
+                    "\n✅ Team. Er hangt een enorme toffe sociale en huiselijke sfeer en er worden veel teamactiviteiten georganiseerd die dit nog versterken. Iedereen is oprecht geïnteresseerd in wie je bent en heel open tegenover elkaar." +
+                    "\nHet meest interessante aan software quality vind ik de mix tussen technische en sociale vaardigheden. Ik ben redelijk technisch en zeer sociaal, dus dat komt goed uit." +
+                    "\nHet belangrijkste in mijn leven is een goede vader zijn, en een goede gezondheid voor mij en mijn gezin. Verder ben ik geboeid door sport: ik heb al vanalles gedaan, maar momenteel doe ik enkel nog fitness. Als er nog tijd over is, werk ik verder aan kleine programmeerprojecten voor mezelf. Wat me verder typeert: ik ben zeer sociaal en enorm gemotiveerd om te groeien en dingen bij te leren. Dat gaat bij Brightest zeker in orde komen. 😊" +
+                    "\nJe mag mij altijd wakker maken voor: hmm, dat wordt moeilijk want ik ben altijd heel vroeg wakker. Maar moest het je toch lukken.. dan sport ik wel het liefst in de vroege ochtend."
+            },
+            {
+                "id": 112,
+                "type": "text",
+                "title": "Florian",
+                "image": "Florian.jfif",
+                "text": "FLORIAN | In september startte ik als software quality engineer bij Brightest East. Alles was meteen goed geregeld en als er een probleem was, werd dit meteen opgelost. Iedereen is heel open en enthousiast. Wat me verder nog is bijgebleven aan m’n start: de vlotte babbels met de collega’s, de leuke etentjes, het team event met “de geitjes in East”, de gezellige team meeting in Kontich,..." +
+                    "\nBrightest in drie woorden?" +
+                    "\n👉 Groei: jezelf blijven ontwikkelen is heel belangrijk en bij Brightest is dit heel aanwezig. De Masterclass is hier al een voorbeeld van en verder zijn er nog tal van andere opleidingen die Brightest aanbiedt die je kan volgen om steeds bij te leren." +
+                    "\n👉 Expertise: Brightest is een bedrijf dat in mijn ogen perfect de balans legt tussen een informele en professionele aanpak. Ze weten het beste hoe je je kan ontspannen en plezier kan maken, maar ze staan ook steeds klaar om iets in orde te brengen. Je voelt dat je in een bedrijf zit dat weet wat ze doen en dit ook altijd optimaal aanpakken. Er staat altijd iemand klaar met de nodige kennis om je verder te helpen." +
+                    "\n👉 Sociaal: als consultant is contacten leggen natuurlijk zeer belangrijk en dat merk je hier, iedereen is enthousiast en toont ook interesse in elkaar. Zo waren er toen ik in de Masterclass zat al tal van mensen van Brightest die me vroegen hoe de opstart was gegaan en hoe ik me voelde binnen het bedrijf. De babbels zijn altijd heel spontaan." +
+                    "\nWat vind ik zo boeiend aan software quality? Kunnen bijdragen aan de kwaliteit van de opgeleverde software alsook in contact komen met de verschillende procedures die de software doorloopt. Daarmee bedoel ik dat we niet enkel in contact komen met de developers maar ook met mensen van de business en analisten. Verder haal ik voldoening uit het elimineren van bugs en vind ik de diversiteit van de domeinen van software quality aantrekkelijk." +
+                    "\nHet belangrijkste voor mij in mijn leven: een goede gezondheid, familie en vrienden, en mijn huisdieren. Daarnaast hou ik van films en series (vooral MARVEL films), muziek, en speel ik voetbal op provinciaal niveau. Ik train twee maal per week en in het weekend heb ik wedstrijd. Ik ben ook supporter van de Duitse voetbalploeg Mönchen Gladbach. Daar ben ik geboren en mijn grootouders wonen er nog steeds. Als de coronamaatregelen het toelaten, ga ik één tot twee keer per jaar ter plekke een wedstrijd kijken samen met mijn papa. Tijdens de rust mag een lekkere Duits curryworst niet ontbreken 😃 Als ik nog tijd over heb, game ik ook graag op mijn nieuwe PS5 of zelfgemaakte gaming-pc." +
+                    "\nWat me verder typeert: als ik het in gametaal mag beschrijven noem ik mij een ‘completionist’ die voor alle achievements gaat. Ik ben iemand die graag op alle vlakken in orde is. Ik ben ook iemand die niet graag altijd hetzelfde doet; ik heb graag variatie." +
+                    "\nWaarvoor mag je me wakker maken? Een citytrip, een leuke wandeling door het bos of gewoon gezellig thuis een film of serie kijken."
+            }
         ]
     },
     //---------------------------LEVEL2---------------------------
@@ -689,6 +747,28 @@ const DataLevels = [
                     "swITch track finalized"
                 ]
             }
+        ],
+        "Testimonials": [
+            {
+                "id": 201,
+                "type": "text",
+                "title": "Carole",
+                "image": "Carole.jfif",
+                "text": "Ik ben recent gestart bij Brightest West (Gent). Wat me het meeste is bijgebleven aan mijn eerste dag op het hoofdkantoor in Kontich, was de grote verwelkoming op het televisiescherm aan de muur in de lounge. Veel mensen spraken me aan met de vraag \"Ben jij Carole?\" waarna ze mij een warm welkom heetten. Ik voelde me meteen op mijn gemak." +
+                    "\n" +
+                    "\nBrightest in drie woorden?" +
+                    "\n👉 Team: je komt terecht in een hecht team. Iedereen is open en vriendelijk en er wordt altijd plezier gemaakt." +
+                    "\n👉 Kwaliteit: Brightest heeft een breed aanbod van kwalitatieve opleidingen en ze proberen je persoonlijke kwaliteiten ook mee op te bouwen door een goede ondersteuning, uitdagende projecten en mee te denken over je toekomstplannen." +
+                    "\n👉 Sportief: de gezondheid en sport komt veel aan bod binnen Brightest. Er worden sportevenementen georganiseerd, en voor wie wilt is er persoonlijke begeleiding met sport- en voedingscoaches." +
+                    "\n" +
+                    "\nHet meest interessante aan software quality vind ik de structuur die achter elke software, codeertaal, testplan, teststap zit. Ik vind het leuk om mezelf uit te dagen om alles nog duidelijker, overzichtelijker, sneller te kunnen laten lopen. Bepaalde opstellingen, structuren, queries vinden die helpen bij het dagelijks testen." +
+                    "\n" +
+                    "\nDe belangrijkste dingen in mijn leven: een gezonde mindset en levensstijl en de motivatie om te werken voor mezelf en de mensen rondom mij. Ik ben dagelijks bezig met voeding en train ongeveer vijf dagen in de week. Ik vind het leuk om een vaste routine te hebben van werk - sport - ontspanning. Binnen de fitness wereld hangt er ook een enorme \"feel good\" sfeer waardoor ik veel zelfvertrouwen heb gekregen." +
+                    "\nWat me verder typeert: ik ben altijd al een ambitieus persoon geweest die weet wat ze wilt en een echte organisator is. Al van kleins af was ik niet bang om de leiding te nemen en organiseerde ik vanalles. Ik ben al vijf jaar coördinator van de dansafdeling binnen onze sportclub. Ik hou er van om alles te plannen, van mijn weekmenu tot mijn workouts tot mijn to do's. Ik ben een bezige bij die niet vaak stil zit. Maar minstens één avond in de week is het tijd voor mijn me-time Netflix moment." +
+                    "\n" +
+                    "\nJe mag mij altijd wakker maken voor een ontbijt, brunch, lunch of diner in een goed restaurant. Ik kan enorm genieten van lekker gaan eten, zowel in kleine bistro's als in grotere restaurants."
+            }
+
         ]
     },
     //---------------------------LEVEL3---------------------------
@@ -942,6 +1022,41 @@ const DataLevels = [
                     "De belangrijkste dingen in mijn leven zijn mijn kindjes, familie, en vrienden. Daarnaast ben ik ook geboeid door fotografie, muziek, en sport (lopen en fietsen). Wat mij verder typeert? Flauwe grappen! Als je ze nog niet hebt gehoord, dan volgen ze zeker nog 😉\n" +
                     "Mij mag je altijd wakker maken voor een goed feestje! En daar kennen ze wat van hier bij Brightest 🥳️"
             },
+            {
+                "id": 502,
+                "type": "text",
+                "title": "Roel",
+                "image": "Roel.jfif",
+                "text": "Een tijd geleden startte ik bij Brightest East (Genk). Ik kende al enkele mensen van het East team en mocht al mee op team event. Het was leuk om zoveel bekende gezichten terug te zien. Op mijn startdag was ik uitgenodigd voor een lunch met de andere starters. De goeie toon was gezet!" +
+                    "\nBrightest in drie woorden?" +
+                    "\n✅ Sfeer. Bij Brightest hangt er altijd een goeie sfeer, het is er heel warm en familiaal. Als consultant bouw je soms meer een band op met de klant dan met je werkgever, maar dat is bij Brightest helemaal niet het geval." +
+                    "\n✅ Behulpzaam. Ze vragen steeds jouw mening en feedback en doen er ook daadwerkelijk iets mee. Ze staan altijd voor je klaar. Vragen voor HR? Hulp nodig bij een automation project? Er is altijd iemand die je kan en wil helpen." +
+                    "\n✅ Professioneel. Je wordt persoonlijk opgevolgd, van trainingen tot het in orde brengen van de wagen. Het is allemaal heel professioneel." +
+                    "\nHet meest interessante aan software quality vind ik het meedraaien in het ontwikkelproces en zo de kwaliteit van de software verbeteren. Het is ook fijn om altijd met nieuwe technologieën te werken. Zo kan ik constant mijn kennis verbreden." +
+                    "\nHet belangrijkste in het leven voor mij is een goede gezondheid en natuurlijk veel warmte en liefde van vrienden en familie. In mijn vrije tijd ben ik graag bezig met allerhande elektronica projectjes. Van het bouwen van een analoge synthesizer en het repareren van een oude Commodore computer tot het prullen met mijn 3d printer. Ik speel ook graag gezelschapspelletjes. En als ik 's avonds tot rust wil komen, lees ik een graphic novel. Om in conditie te blijven, ga ik cruisen op mijn longboard of een wandeling maken met mijn vriendin en het hondje in het bos." +
+                    "\nWat me verder typeert: volgens mijn vriendin ben ik heel geduldig. Als iemand iets vraagt, neem ik de tijd om het grondig uit te leggen. " +
+                    "\nJe mag mij altijd wakker maken voor: euh, liefst niks, ik word niet graag wakker gemaakt. 🥴️ Wat wél mag: me uitnodigen om ergens lekker te gaan eten of voor een uitstapje zoals bowlen, minigolf of een middagje Center Parks."
+
+            },
+            {
+                "id": 503,
+                "type": "text",
+                "title": "Geert",
+                "image": "Geert.jfif",
+                "text": "Ik startte begin januari als test consultant bij Brightest East (Genk). Wat me het meeste is bijgebleven aan m’n start bij Brightest: thuis opgehaald worden door management om samen naar kantoor te rijden voor de eerste werkdag... Chill!" +
+                    "\n" +
+                    "\nBrightest in drie woorden:" +
+                    "\n1⃣ Professioneel.We hebben een sterke batterij aan quality consultants.Samen zijn we in staat om elke uitdaging aan te gaan." +
+                    "\n2⃣ Familiaal.Er is een toffe sfeer.Dit vormt met eensgezinde mensen de core van Brightest." +
+                    "\n3⃣ Jong & verfrissend.We zijn een jong team, met waarden en een visie die daarop matchen." +
+                    "\n" +
+                    "\nHet meest interessante aan software quality vind ik dat je heel breed betrokken wordt in het ontwikkelingsproces van een product.Op die manier kan je met veel mensen, in verschillende rollen, samenwerken – altijd afwisseling!" +
+                    "\n" +
+                    "\nHet belangrijkste in mijn leven is quality time, zowel op het werk als prive.Zo breng ik veel tijd door al wandelend met de hond, of als supporter voor onze tennis - en voetbalspelende kinderen.Wat me verder typeert: ik ben een optimist, sociaal, toegankelijk, en altijd bereid om te helpen!" +
+                    "\n" +
+                    "\nJe mag mij altijd wakker maken voor: ik ben per definitie geregeld wakker, gezien mijn zoontje van 1 jaar 😃 Maar indien ik toch slaap mag je me altijd wakker maken voor een goed biertje(daar slaap je dan weer goed van 😊)."
+
+            }
         ]
     },
     //---------------------------LEVEL6---------------------------
