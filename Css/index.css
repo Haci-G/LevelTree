@@ -1047,8 +1047,8 @@ section .thumbnail:hover {
 
 #player {
   margin: 2% 5%;
-  width: 600px;
-  height: 450px;
+  width:85%;
+  height: 50vh;
   z-index: 4;
 }
 
