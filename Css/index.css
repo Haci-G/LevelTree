@@ -657,6 +657,11 @@ footer {
   transform: rotate(0);
 }
 
+#sluitModal {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 /* for the href Attribute */
 .popup:target {
   visibility: visible;
@@ -664,9 +669,7 @@ footer {
 }
 
 /* Close Btn */
-#sluitModal {
-  font-size: 1.5rem;
-  font-weight: 600;
+.popup__close {
   position: absolute;
   right: -1rem;
   top: -1rem;

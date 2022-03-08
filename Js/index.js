@@ -45,7 +45,7 @@ window.addEventListener('load', (event) => {
         document.querySelector(".item-legende").style.width = "250px";
     }
     else if (browserChecker("firefox")) {
-        document.getElementById('sluitModal').style.zIndex = 4;
+        document.querySelector('.popup__close').style.zIndex = 4;
     }
 });
 
