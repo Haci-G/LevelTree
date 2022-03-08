@@ -28,7 +28,7 @@ function browserChecker(browserUser) {
 //Bij het laden van de pagina wordt er rustig uigezoomd tot de boom volledig zichtbaar is
 window.addEventListener('load', (event) => {
     //  document.getElementById("zoomStartpunt").click();
-    //  setTimeout(terugNaarStart, 500);
+    setTimeout(terugNaarStart, 500);
 
     //Sneeuweffect mag niet automatisch starten
     // snowStorm.stop(); snowStorm.freeze();
@@ -43,6 +43,9 @@ window.addEventListener('load', (event) => {
         document.getElementsByClassName('item-legende')[1].style.width = "250px";
         document.getElementsByClassName('item-legende')[2].style.width = "250px";
         document.querySelector(".item-legende").style.width = "250px";
+    }
+    else if (browserChecker("firefox")) {
+        document.getElementById('sluitModal').style.zIndex = 4;
     }
 });
 
@@ -89,7 +92,6 @@ function CheckSeizoen() {
             document.querySelector(".springseason").style.display = "block";
             SpringSeason();
     }
-    console.log()
 }
 
 // functie om per seizoen de juiste achtergrond animatie te laten zien
@@ -238,7 +240,8 @@ function OpenModel(lvl_Id) {
             thumbnail.setAttribute('data-id', e.id);
             // thumbnail Click EventListener
             thumbnail.addEventListener('click', function () {
-                openInfoFrame(this);
+                setTimeout(openInfoFrame(this), 5000);
+
             })
             // create image for the thumbnail
             let imageThumbnail = CreateImageElementForCarouselThumbnail(e, index)
@@ -384,7 +387,6 @@ function CreateImageElementForCarouselThumbnail(objTest, index) {
 
     image.setAttribute('data-type', objTest.type);
 
-    //image.setAttribute('onclick', openInfoFrame(objTest.title));
 
     if (objTest.type == "yt") {
         image.setAttribute('data-YTVideoID', objTest.videoId);
@@ -430,7 +432,7 @@ function openInfoFrame(thumbnailEle) {
     let ContentSlidBox = document.querySelector('#ContentBox');
     ContentSlidBox.innerHTML = "";
 
-    let titleEle = document.createElement("h1");
+    let titleEle = document.createElement("h2");
 
     ContentSlidBox.appendChild(titleEle);
 
@@ -438,18 +440,18 @@ function openInfoFrame(thumbnailEle) {
     titleEle.innerHTML = testObj.title;
 
 
-    let SubElement = null;
+    let SubElement = "";
     if (testObj.type == "yt") {
         // Iframe for youtube video
         SubElement = document.createElement('iframe');
-        SubElement.src = `https://www.youtube-nocookie.com/embed/${testObj.videoId}`;
+        SubElement.src = `https://www.youtube.com/embed/${testObj.videoId}?autoplay=0&controls=1&enablejsapi=1`;
         SubElement.title = testObj.title;
         SubElement.frameBorder = 0;
-        SubElement.allow = "accelerometer; autoplay; clipboard-write; encrypted-media;";
         SubElement.allowfullscreen = true;
+        SubElement.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         SubElement.controls = true;
-        SubElement.id = "YtFrame";
-
+        SubElement.type = "text/html"
+        SubElement.id = "player";
     }
     else if (testObj.type == "text") {
 
@@ -471,7 +473,7 @@ function openInfoFrame(thumbnailEle) {
     }
 
     ContentSlidBox.appendChild(SubElement);
-    SlidInOutBOX();
+    SlidInOutBOX()
 
 }
 

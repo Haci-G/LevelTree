@@ -53,31 +53,31 @@ p {
   z-index: -2;
 }
 
-.springflowerLarge{
+.springflowerLarge {
   position: absolute;
   height: 95px;
   width: 40px;
   bottom: 45px;
 }
-.springflowerSmall{
+.springflowerSmall {
   position: absolute;
   height: 80px;
   width: 40px;
   bottom: 45px;
 }
-#springflower1{
+#springflower1 {
   left: 33%;
 }
-#springflower2{
+#springflower2 {
   left: 27%;
 }
-#springflower3{
+#springflower3 {
   left: 30%;
 }
-#springflower4{
+#springflower4 {
   left: 92%;
 }
-#springflower5{
+#springflower5 {
   left: 90%;
 }
 #zomer {
@@ -618,28 +618,6 @@ footer {
 
 /* Modal */
 
-/* .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-  } */
-
-/* .button {
-    position: absolute;
-    top: 20px;
-    text-decoration: none;
-    font-size: 0.875rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    display: inline-block;
-    border-radius: 1.5rem;
-    background-color: #fff;
-    color: #9191e9;
-    padding: 1rem 2rem;
-  } */
-
 .popup {
   display: flex;
   align-items: center;
@@ -679,11 +657,6 @@ footer {
   transform: rotate(0);
 }
 
-#sluitModal {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
 /* for the href Attribute */
 .popup:target {
   visibility: visible;
@@ -691,7 +664,9 @@ footer {
 }
 
 /* Close Btn */
-.popup__close {
+#sluitModal {
+  font-size: 1.5rem;
+  font-weight: 600;
   position: absolute;
   right: -1rem;
   top: -1rem;
@@ -699,7 +674,7 @@ footer {
   height: 3rem;
   border-radius: 100%;
   background-color: white;
-  z-index: 4;
+  z-index: 5;
   color: black;
   line-height: 3rem;
   text-align: center;
@@ -1000,13 +975,12 @@ section .thumbnail:hover {
   -o-transition: all 1s ease-in-out;
   -ms-transition: all 1s ease-in-out;
   position: absolute;
-  top: 00%;
+  top: 0%;
   right: 0%;
-  z-index: 1;
   background-color: #f4f4f4;
   width: 80%;
   height: 100%;
-  z-index: 3;
+  z-index: 4;
   border-radius: 15px 0px 50px 15px;
 
   opacity: 0;
@@ -1015,12 +989,6 @@ section .thumbnail:hover {
 /* here */
 .popFrame {
   display: block;
-  /* transform: translate(0, -150%);
-  -webkit-transform: translate(0%, -100%);
-  -moz-transform: translate(0, -150%);
-  -o-transform: translate(0, -150%);
-  -ms-transform: translate(0, -150%); */
-
   animation: fadeIn 0.3s;
   animation-delay: 0.3s;
   animation-fill-mode: forwards;
@@ -1069,22 +1037,16 @@ section .thumbnail:hover {
   display: block;
   text-align: center;
   align-items: center;
-  height: 100%;
+  height: 70%;
   width: 100%;
-
   border-radius: inherit;
 }
 
-#YtFrame {
-  margin: 0 5%;
-  width: 90%;
-  height: 60%;
-}
-
-#ytTv {
-  margin: 0 5%;
-  width: 90%;
-  height: 60%;
+#player {
+  margin: 2% 5%;
+  width: 600px;
+  height: 450px;
+  z-index: 4;
 }
 
 #TextBox {
@@ -1096,9 +1058,12 @@ section .thumbnail:hover {
 /* ContentBox Type = Text */
 
 .PersonImage {
-  height: 37%;
-  width: 37%;
+  width: 40%;
   object-fit: contain;
+}
+
+.titleContent {
+  margin: 0 5%;
 }
 
 .testimonialText {
@@ -1108,6 +1073,7 @@ section .thumbnail:hover {
   margin-right: 5px;
   padding: 0 5px;
   max-height: 500px;
+  width: 75%;
 }
 
 .testimonialText::-webkit-scrollbar {
@@ -1179,8 +1145,16 @@ section .thumbnail:hover {
     padding: 5%;
   }
 
+  .popup-inner {
+    border-radius: 15px 0px 50px 15px;
+  }
+
   .popup__photo {
     display: none;
+  }
+
+  .FrameBox {
+    width: 100%;
   }
 }
 
@@ -1299,6 +1273,4 @@ section .thumbnail:hover {
   .popup-inner {
     height: 70%;
   }
-
-  
 }
