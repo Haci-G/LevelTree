@@ -243,6 +243,8 @@ function OpenModel(lvl_Id) {
                 setTimeout(openInfoFrame(this));
                 if (browserChecker("firefox")){
                     document.getElementById("sluitModal").style.opacity = "0";
+                    document.getElementById("sluitModal").style.height = "0";
+                    document.getElementById("sluitModal").style.width = "0";
                 }
             })
             // create image for the thumbnail
@@ -407,6 +409,8 @@ function SlidInOutBOX() {
     let SlidBox = document.querySelector('.FrameBox');
     let closed = SlidBox.classList.toggle("popFrame");
     document.getElementById("sluitModal").style.opacity = "100";
+    document.getElementById("sluitModal").style.height = "3REM";
+    document.getElementById("sluitModal").style.width = "3REM";
     if (!closed)
         document.querySelector("#ContentBox").innerHTML = "";
 
