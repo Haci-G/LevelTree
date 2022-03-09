@@ -44,8 +44,8 @@ window.addEventListener('load', (event) => {
         document.getElementsByClassName('item-legende')[2].style.width = "250px";
         document.querySelector(".item-legende").style.width = "250px";
     }
-    else if (browserChecker("firefox")) {
-        document.querySelector('.popup__close').style.zIndex = 3;
+    if (browserChecker("firefox")){
+        document.getElementById("sluitModal").style.zIndex = "3";
     }
 });
 
@@ -240,8 +240,10 @@ function OpenModel(lvl_Id) {
             thumbnail.setAttribute('data-id', e.id);
             // thumbnail Click EventListener
             thumbnail.addEventListener('click', function () {
-                setTimeout(openInfoFrame(this), 5000);
-
+                setTimeout(openInfoFrame(this));
+                if (browserChecker("firefox")){
+                    document.getElementById("sluitModal").style.opacity = "0";
+                }
             })
             // create image for the thumbnail
             let imageThumbnail = CreateImageElementForCarouselThumbnail(e, index)
@@ -404,7 +406,7 @@ function CreateImageElementForCarouselThumbnail(objTest, index) {
 function SlidInOutBOX() {
     let SlidBox = document.querySelector('.FrameBox');
     let closed = SlidBox.classList.toggle("popFrame");
-
+    document.getElementById("sluitModal").style.opacity = "100";
     if (!closed)
         document.querySelector("#ContentBox").innerHTML = "";
 
@@ -452,6 +454,7 @@ function openInfoFrame(thumbnailEle) {
         SubElement.controls = true;
         SubElement.type = "text/html"
         SubElement.id = "player";
+
     }
     else if (testObj.type == "text") {
 
