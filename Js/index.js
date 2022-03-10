@@ -913,8 +913,7 @@ const DataLevels = [
             {
                 "SkillName": "Qualifications",
                 "tester": [
-                    "Scaled Agile Concepts (training mPower)",
-                    "IREB certification"
+                    "Scaled Agile Concepts (training mPower)"
                 ],
                 "technical": [
                     "SwITch final assignment (for those who didn't follow swITch)",
