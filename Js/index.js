@@ -546,7 +546,7 @@ const DataLevels = [
             {
                 "SkillName": "Test Skills",
                 "tester": [
-                    "Structured Testing (test Design basics)"
+                    "Structured Testing (test design basics)"
                 ],
             },
             {
@@ -729,7 +729,7 @@ const DataLevels = [
                 "technical": [
                     "API Test Automation",
                     "Using Automation Framework/Tools",
-                    "Technology basics: NodeJS, GIT, CI/CD, Rest, PHP MySQL, Java IntelliJ, Microservices, ..."
+                    "Technology basics: Node.js, GIT, CI/CD, Rest, PHP MySQL, Java IntelliJ, Microservices, ..."
                 ]
 
             },
@@ -802,8 +802,8 @@ const DataLevels = [
             {
                 "SkillName": "Technical Skills",
                 "tester": [
-                    "DevOps Basic Concepts (via training =>)",
-                    "Shift-left Basic Concepts (via training =>)",
+                    "DevOps Basic Concepts (see qualifications)",
+                    "Shift-left Basic Concepts (see qualifications)",
                     "Build Domain(s) Expertise (your specialisations / ambitions)",
                 ],
                 "technical": [
@@ -816,8 +816,8 @@ const DataLevels = [
             {
                 "SkillName": "Test Skills",
                 "tester": [
-                    "Able to select \"Test Mngt Tool\" & organise",
-                    "Exploratory Testing (via (self)training) =>)",
+                    "Able to select \"Test Management Tool\" & organise",
+                    "Exploratory Testing (see qualifications)",
                     "Build Domain Expertise (sector, QA related topics)"
                 ],
                 "lead": [
@@ -889,7 +889,7 @@ const DataLevels = [
                 "technical": [
                     "Build Automation Framework",
                     "Advanced programming skills (OOP, design patterns,...)",
-                    "DevOps Advanced (via training =>)"
+                    "DevOps Advanced (see qualifications)"
                 ]
             },
             {
@@ -913,7 +913,8 @@ const DataLevels = [
             {
                 "SkillName": "Qualifications",
                 "tester": [
-                    "Scaled Agile Concepts (training mPower)"
+                    "Scaled Agile Concepts (training mPower)",
+                    "IREB certification"
                 ],
                 "technical": [
                     "SwITch final assignment (for those who didn't follow swITch)",
@@ -971,14 +972,12 @@ const DataLevels = [
                 "tester": [
                     "Expert Coach in at least 1 domain (your specialisation)",
                     "Able to make POC in at least 1 domain (your specialisation)",
-                    "Build Domain(s) Expertise (your specialisations - self development: new trends, ...)",
-                    "Advanced SQL or noSQL db's"
+                    "Build Domain(s) Expertise (your specialisations - self development: new trends, ...)"
                 ],
                 "technical": [
-                    "Test Automation POC"
-                ],
-                "lead": [
-                    "DevOps Advanced (via training =>)"
+                    "Advanced SQL or noSQL db's",
+                    "Test Automation POC",
+                    "DevOps Advanced (see qualifications)"
                 ]
             },
             {
@@ -1010,8 +1009,6 @@ const DataLevels = [
                 ],
                 "technical": [
                     "ISTQB Advanced Certified: Technical Test Analyst",
-                ],
-                "lead": [
                     "DevOps Advanced training"
                 ]
             }
@@ -1149,7 +1146,7 @@ const DataLevels = [
             {
                 "SkillName": "Test Skills",
                 "lead": [
-                    "Asses QA organisation (all in Brightscan)"
+                    "Asses QA organisation (all-in Brightscan)"
                 ]
             },
             {
@@ -1196,7 +1193,7 @@ const DataLevels = [
                 "SkillName": "BTO/C Skills",
                 "tester": [
                     "Organise external events (content, sector, ...)",
-                    "Tender uitwerken (all in)",
+                    "Tender uitwerken (all-in)",
                     "Business development",
                     "Create new services/solutions"
                 ]

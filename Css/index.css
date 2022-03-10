@@ -1050,6 +1050,7 @@ section .thumbnail:hover {
   width:85%;
   height: 50vh;
   z-index: 4;
+  max-height: 550px;
 }
 
 #TextBox {
