@@ -1153,7 +1153,7 @@ const DataLevels = [
                 "SkillName": "BTO/C Skills",
                 "tester": [
                     "Innovation ideas",
-                    "Proposal Writing (incl. budgets, all in)",
+                    "Proposal Writing (incl. budgets, all-in)",
                     "Key account management",
                     "Be part of Brightest as a company (lead \"area\")",
                     "Content review or decide on subjects for (articles, blogs, papers...)",
